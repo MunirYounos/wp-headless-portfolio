@@ -16,6 +16,7 @@
                     <li class="icons-item"><a href="tel:60526066" class="icons-link"><i class="fas fa-phone-alt"></i> +45 60 52 60 66</a></li>
                 </ul>
             </div>
+            <div class="decoration-item"></div>
         <h1 class="main-title">
             <span class="main-title-name">Munir Younosi.</span>
             <span class="main-title-first">Ambatious.</span>

@@ -368,6 +368,40 @@ body {
   fill: #f48400;
 }
 
+.decoration-item {
+  padding: 80px;
+  background: rgba(244, 132, 0, 0.4);
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.decoration-item::after, .decoration-item::before {
+  content: '';
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+}
+
+.decoration-item::after {
+  top: 65%;
+  left: 65%;
+  padding: 50px;
+}
+
+.decoration-item::before {
+  top: -10%;
+  left: 55%;
+  padding: 25px;
+  border: 2px solid #f48400;
+}
+
 .menu-wrap {
   cursor: pointer;
   z-index: 99 !important;
