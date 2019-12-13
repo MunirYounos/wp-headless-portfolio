@@ -141,3 +141,31 @@ $screen-xl-min: 1200px;
 @mixin radial{
     background: radial-gradient(circle, rgba(75,98,212,1) 0%, rgba(165,124,54,1) 40%, rgba(144,2,109,1) 63%, rgba(92,16,171,1) 78%, rgba(122,5,29,1) 94%);
 }
+@mixin decoration{
+    padding:80px;
+    background: rgba($secondary-color, .4);
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    &::after, &::before {
+        content: '';
+        background: rgba($white-color, 0.2);
+        position: absolute;
+        border-radius: 50%;
+        mix-blend-mode: screen;
+    }
+    &::after{
+        top: 65%;
+        left:65%;
+        padding: 50px;
+    }
+    &::before {
+        top: -10%;
+        left:55%;
+        padding:25px;
+        border: 2px solid $secondary-color;
+    }
+}
