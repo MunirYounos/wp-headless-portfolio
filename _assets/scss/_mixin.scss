@@ -1,0 +1,143 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+ // Custom devices
+@mixin cmi($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+ @mixin cmx($screen) {
+    @media (max-width: $screen+'px') {
+        @content;
+    }
+ }
+
+//  using mixin
+//  .container {
+//     padding: 0 15px;
+// // 576px window width and more
+//     @include sm {
+//         padding: 0 20px;
+//     }
+// // 992px window width and more
+//     @include lg {
+//         margin-left: auto;
+//         margin-right: auto;
+//         max-width: 1100px;
+//     }
+// // 1400px window width and more
+//     @include cm(1400) {
+//         margin-bottom: 20px;
+//         margin-top: 20px;
+//     }
+// }
+
+
+@mixin easeOut {
+    transition: all 500ms ease-out;
+}
+@mixin grad {
+    background: rgba($secondary-color,1);
+    background: linear-gradient(-45deg, rgba($primary-color,1) 80%, rgba($secondary-color, 1)20%);
+}
+
+@mixin threede{
+    text-shadow: 
+        0px 1px 1px #919191,
+        0px 2px 1px #919191,
+        0px 3px 1px #919191,
+    1px 2px 3px rgba(16,16,16,0.4),
+    1px 6px 6px rgba(16,16,16,0.2),
+    1px 8px 12px rgba(16,16,16,0.2);
+}
+
+@mixin background($color, $opacity) {
+    @if $show-home-image {
+        &-video {
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+            left:0;
+            top: 0;
+            z-index: 0;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgba($color, $opacity);
+            mix-blend-mode: multiply;
+        }
+    }
+}
+@mixin image-bg($color, $opacity) {
+    @if $show-home-image {
+        &-bg {
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            z-index: 0;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgba($color, $opacity);
+            mix-blend-mode: multiply;
+        }
+    }
+}
+
+@mixin clippath{
+    clip-path: polygon(100% 0, 100% 94%, 89% 97%, 73% 99%, 50% 100%, 27% 99%, 11% 97%, 0 94%, 0 0);
+}
+@mixin radial{
+    background: radial-gradient(circle, rgba(75,98,212,1) 0%, rgba(165,124,54,1) 40%, rgba(144,2,109,1) 63%, rgba(92,16,171,1) 78%, rgba(122,5,29,1) 94%);
+}

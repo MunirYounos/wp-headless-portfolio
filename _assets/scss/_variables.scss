@@ -1,0 +1,36 @@
+/*fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,400i,500,700,700i,800,900&display=swap');
+/**
+ * Colours
+ **/
+$body-color:#f8f8f8;
+$primary-color: #0b0c10; 
+$primary-light: #1f2833;
+$black: black;
+$morning:#85ecfc ;
+$noon: #f13c20;
+$afternoon: rgb(45, 78, 185);
+$evening: #44318D;
+$night: darken($primary-color, 1%);
+$overlay-bw: #0b0c10;
+$white-color: white;
+$text-color: #111;
+$secondary-color: #f48400;
+$success: #5cdb95;
+$fail: #fc4445;
+$warning: #ffe400;
+$show-home-image: true;
+$morning-opacity: 0.979;
+$noon-opacity: 0.799;
+$after-noon-opacity: 0.669;
+$evening-opacity: 0.979;
+$night-opacity: 0.989;
+$background-opacity: 0.7;
+$boxshadow: 0px 0px 22px 1px rgba(168,168,168,0.199);
+/**
+ * Fonts
+ **/
+$font-body: 'Montserrat', sans-serif;
+
+

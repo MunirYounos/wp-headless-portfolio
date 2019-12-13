@@ -1,0 +1,12 @@
+{
+  "dev": {
+    "host": "ftp.multimunir.com",
+    "username": "multimunir.com",
+    "password": "$@2FtpFtp2@$"
+  },
+  "live": {
+    "host": "",
+    "username": "",
+    "password": ""
+  }
+}
