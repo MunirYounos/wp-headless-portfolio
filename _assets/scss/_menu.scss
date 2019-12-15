@@ -9,16 +9,11 @@
     border: 2px solid $secondary-color;
     background: transparent;
     @include easeOut;
-    @include cmx(575){
+    @include cmx(768){
         position: fixed;
         background: $primary-light;
         bottom: 2rem;
         right:2rem;
-    }
-    @include sm {
-        position: absolute;
-        left: 0;
-        top:30px;
     }
     @include md {
         position: absolute;
@@ -51,19 +46,7 @@
     &.close {
         background: $fail;
         border: 2px solid $secondary-color;
-        margin-left: -10%;
-        @include sm {
-            margin-left: -5%;
-        }
-        @include md {
-            margin-left: -5%;
-        }
-        @include lg {
-            margin-left: -5%;
-        }
-        @include xl {
-            margin-left: -20%;
-        }
+
         .btn-line {
             @include easeOut;
             background-color: $white-color;
