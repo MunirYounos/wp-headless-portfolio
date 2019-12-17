@@ -20,22 +20,38 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    margin: 3rem 0;
+    &-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $text-color;
+    letter-spacing: 2px;
+    padding: 0.4rem 1rem;
+    }
+    &-body p {
+        font-size: 0.923rem;
+        font-weight: 300;
+        line-height: 1.5;
+        color: rgba($text-color, 0.8);
+        padding: 1rem;
+    }
 }
 
 
-.brush-icon , .mobile-icon {
+.brush-icon , .mobile-icon{
    width: 100px;
    height: 100px;
-   margin: 5px;
+   margin: 5px 1rem;
 }
 .brush{
+    fill: rgba($secondary-color,0.3);
     stroke:$secondary-color;
     stroke-width: 3;
 }
 .mobile {
     stroke:$secondary-color;
     &.body {
-        fill: none;
+        fill: rgba($text-color,0.4);
         width: 60px;
         height: 90px;
         stroke-width: 3;
@@ -49,4 +65,49 @@
         fill: $secondary-color;
     }
     
+}
+
+#uxicon {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    fill: none;
+    & .ux.body{
+    fill: rgba($secondary-color,0.3);
+    width: 60px;
+    height: 90px;
+    stroke: $secondary-color;
+    stroke-width: 3; 
+    }
+    & .ux.gitar {
+        fill: $secondary-color;
+        transform: translate(-20px,-5px);
+    }
+
+    & .ux.bar {
+        stroke-width: 0.5;
+        stroke: $secondary-color;
+        stroke-miterlimit: 10;
+        transform: translate(-20px, -6px);
+
+    }
+    & .ux.round, & .ux.top {
+        fill: $secondary-color;
+    }
+    & .ux.round, & .ux.top {
+        width: 15px;
+        height: 15px;
+    }
+    & .ux.top {
+        width: 15px;
+        height: 2px;
+    }
+    & .ux.barfilled {
+        fill: $secondary-color;
+        transform: translate(-20px, -6px);
+    }
+    & .ux.pause, & .ux.play {
+        fill: $secondary-color;
+        transform: translate(-20px, -6px);
+    }
 }

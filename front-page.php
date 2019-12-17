@@ -70,7 +70,7 @@
                 <!-- item-start -->
                 <div class="services-item">
             <div class="services-icon">
-
+                 <?php include_once "assets/images/ux-icon.php" ?>
             </div>
             <div class="services-title">
                 <h3>Mobile Development</h3>
@@ -83,7 +83,7 @@
                 <!-- item-start -->
                 <div class="services-item">
             <div class="services-icon">
-
+            <?php include "assets/images/ux-icon.php" ?>
             </div>
             <div class="services-title">
                 <h3>Mobile Development</h3>
