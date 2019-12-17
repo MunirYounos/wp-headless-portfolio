@@ -1,0 +1,52 @@
+.about {
+    &-title {
+        display: block;
+        width: 100%;
+        padding: 0 0 3rem 0;
+        margin: 0 0 1rem 0;
+
+        & h2 {
+            @include h2;
+        }
+    }
+}
+.one {
+    margin-top: 3rem;
+    display: block;
+    width: 100%;
+    @include number;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+
+.brush-icon , .mobile-icon {
+   width: 100px;
+   height: 100px;
+   margin: 5px;
+}
+.brush{
+    stroke:$secondary-color;
+    stroke-width: 3;
+}
+.mobile {
+    stroke:$secondary-color;
+    &.body {
+        fill: none;
+        width: 60px;
+        height: 90px;
+        stroke-width: 3;
+    }
+    &.top {
+        fill: $secondary-color;
+    }
+    &.round {
+        width: 15px;
+        height: 15px;
+        fill: $secondary-color;
+    }
+    
+}

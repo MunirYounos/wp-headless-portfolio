@@ -44,10 +44,10 @@
         <!-- item-start -->
         <div class="services-item">
             <div class="services-icon">
-
+                <?php include_once "assets/images/brush-icon.php" ?>
             </div>
             <div class="services-title">
-                <h3>Mobile Development</h3>
+                <h3>Graphic Design</h3>
             </div>
             <div class="services-body">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aliquid a in itaque magni aliquam, libero eligendi maiores, quaerat corrupti nesciunt magnam repellat eos impedit reprehenderit laboriosam debitis labore sapiente?</p>
@@ -57,7 +57,7 @@
                 <!-- item-start -->
                 <div class="services-item">
             <div class="services-icon">
-
+            <?php include_once "assets/images/mobile.php" ?>
             </div>
             <div class="services-title">
                 <h3>Mobile Development</h3>

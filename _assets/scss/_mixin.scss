@@ -167,3 +167,31 @@ $screen-xl-min: 1200px;
     }
 
 }
+
+@mixin  h2 {
+    text-transform: uppercase;
+    color: lighten($text-color, 10%);
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+    font-weight: 900;
+    &::first-letter {
+        color: $secondary-color;
+    }
+}
+@mixin number {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: lighten($secondary-color, 30%);
+    &::after {
+        position: absolute;
+        content: '';
+        width: 5%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: $secondary-color;
+
+    }
+}
