@@ -1,65 +1,133 @@
 .about {
     &-title {
-        display: block;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         width: 100%;
-        padding: 0 0 3rem 0;
-        margin: 0 0 1rem 0;
+        padding: 0 0 1rem 0;
 
         & h2 {
+            color: lighten($text-color, 10%);
+            letter-spacing: 3px;
             @include h2;
         }
     }
+    &-3d{
+        position: absolute;
+        color: lighten($secondary-color, 46%);
+        top: 0;
+        right: 0;
+        transform: translateX(-40%);
+        font-size: calc(4vw + 1rem);
+        text-transform: uppercase;
+        font-weight: 900;
+        transform: rotateZ(180deg);
+        text-shadow: $threedshadow;
+        z-index: -1;
+    }
 }
 .one {
-    margin-top: 3rem;
-    display: block;
-    width: 100%;
+    color: $white-color;
+    display: inline-block;
+    width: 5%;
     @include number;
 }
 .services {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
     margin: 3rem 0;
+    @include lg{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: stretch;
+    }
+    @include onlymd {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    &-item {
+        padding: 2rem 1rem;
+        @include easeOut;
+        &:hover {
+            box-shadow: $boxshadow;
+            color: $white-color;
+            transform: translateY(-5%);
+            border-bottom: 4px solid rgba($secondary-color,0.6);
+            .brush-icon, .mobile-icon,  #uxicon, .laptop {
+                transform: scale(1.1);
+                stroke: rgba($text-color, 0.6);
+                fill: rgba($text-color,0.3);
+            }
+            .brush, .mobile, .laptop.top, .laptop.bottom, .laptop.line, #uxicon .ux.body{
+                stroke: rgba($text-color, 0.6);
+            }
+            .brush, .mobile.body, #uxicon .ux.body,  #uxicon .ux.gitar, #uxicon .ux.pause, #uxicon .ux.play{
+                fill: rgba($text-color,0.3);
+            }
+            .mobile.top, .mobile.round, #uxicon .ux.round,#uxicon .ux.bar, #uxicon .ux.top, #uxicon .ux.ux.barfilled{
+                fill: $white-color;
+                transform: scale3d(1.1);
+                transform-origin: center;
+            }
+        }
+    }
     &-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: $text-color;
-    letter-spacing: 2px;
-    padding: 0.4rem 1rem;
+    letter-spacing: 0px;
+    padding: 0.5rem 0;
     }
     &-body p {
-        font-size: 0.923rem;
-        font-weight: 300;
+        font-size: 0.8rem;
+        font-weight: 400;
         line-height: 1.5;
         color: rgba($text-color, 0.8);
-        padding: 1rem;
+    }
+
+    &-link {
+        text-decoration: none;
+        cursor: pointer;
+        & .cat1 p{
+            font-weight: 900;
+            font-size: 0.781rem;
+            color: rgba($text-color, 0.8);
+        }
     }
 }
 
 
-.brush-icon , .mobile-icon{
+.brush-icon , .mobile-icon, #uxicon, .laptop {
    width: 100px;
    height: 100px;
-   margin: 5px 1rem;
+   margin: 5px  0 5px 0;
+   @include easeOut;
 }
 .brush{
+    @include easeOut;
     fill: rgba($secondary-color,0.3);
     stroke:$secondary-color;
-    stroke-width: 3;
+    stroke-width: 1;
 }
 .mobile {
+    @include easeOut;
     stroke:$secondary-color;
     &.body {
-        fill: rgba($text-color,0.4);
+        @include easeOut;
+        fill: rgba($secondary-color,0.4);
         width: 60px;
         height: 90px;
-        stroke-width: 3;
+        stroke-width: 1;
     }
     &.top {
+        @include easeOut;
         fill: $secondary-color;
     }
     &.round {
+        @include easeOut;
         width: 15px;
         height: 15px;
         fill: $secondary-color;
@@ -68,23 +136,22 @@
 }
 
 #uxicon {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    fill: none;
+    @include easeOut;
     & .ux.body{
     fill: rgba($secondary-color,0.3);
     width: 60px;
     height: 90px;
     stroke: $secondary-color;
-    stroke-width: 3; 
+    stroke-width: 1; 
     }
     & .ux.gitar {
+        @include easeOut;
         fill: $secondary-color;
         transform: translate(-20px,-5px);
     }
 
     & .ux.bar {
+        @include easeOut;
         stroke-width: 0.5;
         stroke: $secondary-color;
         stroke-miterlimit: 10;
@@ -92,6 +159,7 @@
 
     }
     & .ux.round, & .ux.top {
+        @include easeOut;
         fill: $secondary-color;
     }
     & .ux.round, & .ux.top {
@@ -103,11 +171,35 @@
         height: 2px;
     }
     & .ux.barfilled {
+        @include easeOut;
         fill: $secondary-color;
         transform: translate(-20px, -6px);
     }
     & .ux.pause, & .ux.play {
+        @include easeOut;
         fill: $secondary-color;
         transform: translate(-20px, -6px);
     }
+}
+.laptop {
+    @include easeOut;
+    width: 120px;
+    fill: rgba($secondary-color,0.3);
+
+    &.top, &.bottom, &.line {
+        @include easeOut;
+        stroke: $secondary-color;
+        stroke-miterlimit: 10;
+    }
+    &.top {
+        stroke-width: 1;
+    }
+    &.bottom {
+        stroke-width: 1;
+    
+    }
+    &.line {
+        stroke-width: 0.5;
+    }
+    
 }

@@ -48,7 +48,12 @@ $screen-xl-min: 1200px;
         @content;
     }
  }
-
+@mixin onlymd {
+    @media only screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-lg-min}) {
+        @content;
+    }
+    
+}
 //  using mixin
 //  .container {
 //     padding: 0 15px;
@@ -83,9 +88,9 @@ $screen-xl-min: 1200px;
         0px 1px 1px #919191,
         0px 2px 1px #919191,
         0px 3px 1px #919191,
-    1px 2px 3px rgba(16,16,16,0.4),
-    1px 6px 6px rgba(16,16,16,0.2),
-    1px 8px 12px rgba(16,16,16,0.2);
+        1px 2px 3px rgba(16,16,16,0.4),
+        1px 6px 6px rgba(16,16,16,0.2),
+        1px 8px 12px rgba(16,16,16,0.2);
 }
 
 @mixin background($color, $opacity) {
@@ -141,14 +146,14 @@ $screen-xl-min: 1200px;
 @mixin radial{
     background: radial-gradient(circle, rgba(75,98,212,1) 0%, rgba(165,124,54,1) 40%, rgba(144,2,109,1) 63%, rgba(92,16,171,1) 78%, rgba(122,5,29,1) 94%);
 }
-@mixin decoration($at,$al,$bt,$bl){
+@mixin decoration($at,$al,$bt,$bl,$cl1,$cl2){
     padding:50px;
-    background: rgba($secondary-color, .2);
+    background: rgba($secondary-color, $cl1);
     z-index: 3;
     border-radius: 50%;
     &::after, &::before {
         content: '';
-        background: rgba($white-color, 0.1);
+        background: rgba($white-color, $cl2);
         position: absolute;
         border-radius: 50%;
         mix-blend-mode: screen;
@@ -169,29 +174,41 @@ $screen-xl-min: 1200px;
 }
 
 @mixin  h2 {
+    display: inline-block;
     text-transform: uppercase;
-    color: lighten($text-color, 10%);
-    font-size: 2.4rem;
-    letter-spacing: 3px;
-    font-weight: 900;
+    font-weight: 800;
+    font-size: calc(1.5vw + 1rem);
+    font-family: $font-body;
+    line-height: calc(2vw + 1.555rem);
     &::first-letter {
         color: $secondary-color;
+        text-shadow: $threedshadow;
     }
 }
+
 @mixin number {
     position: relative;
-    font-size: 1.6rem;
+    font-size: calc(1.5vw + 2rem);
     font-weight: 900;
+    z-index: 5;
+    padding: 5px 0 15px 0;
     font-family: sans-serif;
     color: lighten($secondary-color, 30%);
-    &::after {
+    text-shadow: $threedshadow;
+    &::after , &::before{
         position: absolute;
         content: '';
-        width: 5%;
+        width: 40%;
+        z-index: 6;
         height: 4px;
-        bottom: 0;
         left: 0;
         background-color: $secondary-color;
 
+    }
+    &::after{
+        top: 0;
+    }
+    &::before {
+        bottom: 0;
     }
 }

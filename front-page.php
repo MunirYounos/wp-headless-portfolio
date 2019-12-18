@@ -35,62 +35,73 @@
 </section>
 <section class="about">
     <div class="container">
-    <div class="one">1</div>
+    <span class="about-3d">about</span>
     <div class="about-title">
+        <div class="one">1</div>
         <h2>About</h2>
     </div>
+
     <div class="services">
 
         <!-- item-start -->
-        <div class="services-item">
+     <div class="services-item">
+            <a href="#" class="services-link">
             <div class="services-icon">
                 <?php include_once "assets/images/brush-icon.php" ?>
             </div>
             <div class="services-title">
                 <h3>Graphic Design</h3>
             </div>
-            <div class="services-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aliquid a in itaque magni aliquam, libero eligendi maiores, quaerat corrupti nesciunt magnam repellat eos impedit reprehenderit laboriosam debitis labore sapiente?</p>
+            <div class="services-body cat1">
+                <p>Hello, I am Munir, Creative Graphic Designer & Web Developer based in Aarhus Denmark.</p>
             </div>
+        </a>
+     </div>
+        <!-- item-end  -->
+
+     <!-- item-start -->
+        <div class="services-item">
+        <a href="#" class="services-link">
+            <div class="services-icon">
+                 <?php include_once "assets/images/ux-icon.php" ?>
+            </div>
+            <div class="services-title">
+                <h3>UI & UX Design</h3>
+            </div>
+            <div class="services-body cat3">
+                <p>I do design UI interfaces for websites and mobile applications, in relation to UX design patterns.  I create beautiful and user friendly UIs and mockups.</p>
+            </div>
+            </a>
         </div>
         <!-- item-end  -->
-                <!-- item-start -->
-                <div class="services-item">
+         <!-- item-start -->
+         <div class="services-item">
+        <a href="#" class="services-link">
+            <div class="services-icon">
+            <?php include "assets/images/laptop.php" ?>
+            </div>
+            <div class="services-title">
+                <h3>Web Development</h3>
+            </div>
+            <div class="services-body cat4">
+            <p>I try to create a more beautiful and convenient product experience. I have skills in PHP, JavaScript, CSS, HTML, C# and ASP.Net technologies. I am a generalist in my Development fashion but I call myself a Frontend Developer.</p>
+            </div>
+            </a>
+        </div>
+        <!-- item-end  -->
+ <!-- item-start -->
+     <div class="services-item">
+        <a href="#" class="services-link">
             <div class="services-icon">
             <?php include_once "assets/images/mobile.php" ?>
             </div>
             <div class="services-title">
                 <h3>Mobile Development</h3>
             </div>
-            <div class="services-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aliquid a in itaque magni aliquam, libero eligendi maiores, quaerat corrupti nesciunt magnam repellat eos impedit reprehenderit laboriosam debitis labore sapiente?</p>
+            <div class="services-body cat2">
+                <p>I have some knowledge in SWIFT language for IOS platform. but generally when we call Mobile development, for me it means both native and web based development, including responsive design.</p>
             </div>
-        </div>
-        <!-- item-end  -->
-                <!-- item-start -->
-                <div class="services-item">
-            <div class="services-icon">
-                 <?php include_once "assets/images/ux-icon.php" ?>
-            </div>
-            <div class="services-title">
-                <h3>Mobile Development</h3>
-            </div>
-            <div class="services-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aliquid a in itaque magni aliquam, libero eligendi maiores, quaerat corrupti nesciunt magnam repellat eos impedit reprehenderit laboriosam debitis labore sapiente?</p>
-            </div>
-        </div>
-        <!-- item-end  -->
-                <!-- item-start -->
-                <div class="services-item">
-            <div class="services-icon">
-            <?php include "assets/images/ux-icon.php" ?>
-            </div>
-            <div class="services-title">
-                <h3>Mobile Development</h3>
-            </div>
-            <div class="services-body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus aliquid a in itaque magni aliquam, libero eligendi maiores, quaerat corrupti nesciunt magnam repellat eos impedit reprehenderit laboriosam debitis labore sapiente?</p>
-            </div>
+            </a>
         </div>
         <!-- item-end  -->
     </div>

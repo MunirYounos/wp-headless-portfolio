@@ -188,7 +188,6 @@ body{
 }
 
 .decoration-item{
-position: relative;
 grid-column: 2/3;
 grid-row: 2/3;
 position: absolute;
@@ -197,7 +196,7 @@ transform: translateY(-50%);
 right: 0;
 width: 200px;
 height: 200px;
-@include decoration(-12%,26%,-80%, 75%);
+@include decoration(-12%,26%,-80%, 75%, .2, .1);
 }
 
 #logo {
@@ -328,12 +327,14 @@ animation: anima 13s ease infinite alternate 2.1s;
             line-height: 36px;
             padding: 15px 0px 8px 12px;
             transition: all ease-in 300ms;
+            color: $text-color;
         }
         &:hover {
-            color: $text-color;
+            color: $white-color;
         }
         &:hover .btn-ar{
          padding-left: 24px;
+         color: $white-color;
         }
         &::after {
             content: '';
@@ -351,7 +352,7 @@ animation: anima 13s ease infinite alternate 2.1s;
             transform-origin: right;
             bottom: 0;
             right: 0;
-            width: 99%;
+            width: 99.9%;
             z-index: -1;
             height: 100%;
         }

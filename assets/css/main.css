@@ -444,7 +444,6 @@ body {
 }
 
 .decoration-item {
-  position: relative;
   grid-column: 2/3;
   grid-row: 2/3;
   position: absolute;
@@ -665,14 +664,16 @@ body {
   padding: 15px 0px 8px 12px;
   -webkit-transition: all ease-in 300ms;
   transition: all ease-in 300ms;
+  color: #111;
 }
 
 .btn-wrapper .btn:hover {
-  color: #111;
+  color: white;
 }
 
 .btn-wrapper .btn:hover .btn-ar {
   padding-left: 24px;
+  color: white;
 }
 
 .btn-wrapper .btn::after {
@@ -697,7 +698,7 @@ body {
           transform-origin: right;
   bottom: 0;
   right: 0;
-  width: 99%;
+  width: 99.9%;
   z-index: -1;
   height: 100%;
 }
@@ -908,109 +909,235 @@ body {
 }
 
 .about-title {
-  display: block;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  padding: 0 0 3rem 0;
-  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
 }
 
 .about-title h2 {
-  text-transform: uppercase;
   color: #2b2b2b;
-  font-size: 2.4rem;
   letter-spacing: 3px;
-  font-weight: 900;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: -webkit-calc(1.5vw + 1rem);
+  font-size: calc(1.5vw + 1rem);
+  font-family: "Montserrat", sans-serif;
+  line-height: -webkit-calc(2vw + 1.555rem);
+  line-height: calc(2vw + 1.555rem);
 }
 
 .about-title h2::first-letter {
   color: #e1be23;
+  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
+}
+
+.about-3d {
+  position: absolute;
+  color: #fdfbf1;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(-40%);
+      -ms-transform: translateX(-40%);
+          transform: translateX(-40%);
+  font-size: -webkit-calc(4vw + 1rem);
+  font-size: calc(4vw + 1rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-transform: rotateZ(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotateZ(180deg);
+  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
+  z-index: -1;
 }
 
 .one {
-  margin-top: 3rem;
-  display: block;
-  width: 100%;
+  color: white;
+  display: inline-block;
+  width: 5%;
   position: relative;
-  font-size: 1.6rem;
+  font-size: -webkit-calc(1.5vw + 2rem);
+  font-size: calc(1.5vw + 2rem);
   font-weight: 900;
+  z-index: 5;
+  padding: 5px 0 15px 0;
   font-family: sans-serif;
   color: #f3e6aa;
+  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
-.one::after {
+.one::after, .one::before {
   position: absolute;
   content: '';
-  width: 5%;
+  width: 40%;
+  z-index: 6;
   height: 4px;
-  bottom: 0;
   left: 0;
   background-color: #e1be23;
 }
 
+.one::after {
+  top: 0;
+}
+
+.one::before {
+  bottom: 0;
+}
+
 .services {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
   margin: 3rem 0;
 }
 
+@media (min-width: 992px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 20px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.services-item {
+  padding: 2rem 1rem;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.services-item:hover {
+  box-shadow: 0px 0px 22px 2px rgba(17, 17, 17, 0.234);
+  color: white;
+  -webkit-transform: translateY(-5%);
+      -ms-transform: translateY(-5%);
+          transform: translateY(-5%);
+  border-bottom: 4px solid rgba(225, 190, 35, 0.6);
+}
+
+.services-item:hover .brush-icon, .services-item:hover .mobile-icon, .services-item:hover #uxicon, .services-item:hover .laptop {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  stroke: rgba(17, 17, 17, 0.6);
+  fill: rgba(17, 17, 17, 0.3);
+}
+
+.services-item:hover .brush, .services-item:hover .mobile, .services-item:hover .laptop.top, .services-item:hover .laptop.bottom, .services-item:hover .laptop.line, .services-item:hover #uxicon .ux.body {
+  stroke: rgba(17, 17, 17, 0.6);
+}
+
+.services-item:hover .brush, .services-item:hover .mobile.body, .services-item:hover #uxicon .ux.body, .services-item:hover #uxicon .ux.gitar, .services-item:hover #uxicon .ux.pause, .services-item:hover #uxicon .ux.play {
+  fill: rgba(17, 17, 17, 0.3);
+}
+
+.services-item:hover .mobile.top, .services-item:hover .mobile.round, .services-item:hover #uxicon .ux.round, .services-item:hover #uxicon .ux.bar, .services-item:hover #uxicon .ux.top, .services-item:hover #uxicon .ux.ux.barfilled {
+  fill: white;
+  -webkit-transform: scale3d(1.1);
+          transform: scale3d(1.1);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
 .services-title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #111;
-  letter-spacing: 2px;
-  padding: 0.4rem 1rem;
+  letter-spacing: 0px;
+  padding: 0.5rem 0;
 }
 
 .services-body p {
-  font-size: 0.923rem;
-  font-weight: 300;
+  font-size: 0.8rem;
+  font-weight: 400;
   line-height: 1.5;
   color: rgba(17, 17, 17, 0.8);
-  padding: 1rem;
 }
 
-.brush-icon, .mobile-icon {
+.services-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.services-link .cat1 p {
+  font-weight: 900;
+  font-size: 0.781rem;
+  color: rgba(17, 17, 17, 0.8);
+}
+
+.brush-icon, .mobile-icon, #uxicon, .laptop {
   width: 100px;
   height: 100px;
-  margin: 5px 1rem;
+  margin: 5px  0 5px 0;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 .brush {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   fill: rgba(225, 190, 35, 0.3);
   stroke: #e1be23;
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 .mobile {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   stroke: #e1be23;
 }
 
 .mobile.body {
-  fill: rgba(17, 17, 17, 0.4);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  fill: rgba(225, 190, 35, 0.4);
   width: 60px;
   height: 90px;
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 .mobile.top {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   fill: #e1be23;
 }
 
 .mobile.round {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   width: 15px;
   height: 15px;
   fill: #e1be23;
 }
 
 #uxicon {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  fill: none;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 #uxicon .ux.body {
@@ -1018,10 +1145,12 @@ body {
   width: 60px;
   height: 90px;
   stroke: #e1be23;
-  stroke-width: 3;
+  stroke-width: 1;
 }
 
 #uxicon .ux.gitar {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   fill: #e1be23;
   -webkit-transform: translate(-20px, -5px);
       -ms-transform: translate(-20px, -5px);
@@ -1029,6 +1158,8 @@ body {
 }
 
 #uxicon .ux.bar {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   stroke-width: 0.5;
   stroke: #e1be23;
   stroke-miterlimit: 10;
@@ -1038,6 +1169,8 @@ body {
 }
 
 #uxicon .ux.round, #uxicon .ux.top {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   fill: #e1be23;
 }
 
@@ -1052,6 +1185,8 @@ body {
 }
 
 #uxicon .ux.barfilled {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   fill: #e1be23;
   -webkit-transform: translate(-20px, -6px);
       -ms-transform: translate(-20px, -6px);
@@ -1059,9 +1194,37 @@ body {
 }
 
 #uxicon .ux.pause, #uxicon .ux.play {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   fill: #e1be23;
   -webkit-transform: translate(-20px, -6px);
       -ms-transform: translate(-20px, -6px);
           transform: translate(-20px, -6px);
+}
+
+.laptop {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  width: 120px;
+  fill: rgba(225, 190, 35, 0.3);
+}
+
+.laptop.top, .laptop.bottom, .laptop.line {
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  stroke: #e1be23;
+  stroke-miterlimit: 10;
+}
+
+.laptop.top {
+  stroke-width: 1;
+}
+
+.laptop.bottom {
+  stroke-width: 1;
+}
+
+.laptop.line {
+  stroke-width: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
