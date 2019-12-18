@@ -56,6 +56,7 @@
                 <p>Hello, I am Munir, Creative Graphic Designer & Web Developer based in Aarhus Denmark.</p>
             </div>
         </a>
+        <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
      </div>
         <!-- item-end  -->
 
@@ -72,6 +73,7 @@
                 <p>I do design UI interfaces for websites and mobile applications, in relation to UX design patterns.  I create beautiful and user friendly UIs and mockups.</p>
             </div>
             </a>
+            <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
         </div>
         <!-- item-end  -->
          <!-- item-start -->
@@ -87,6 +89,7 @@
             <p>I try to create a more beautiful and convenient product experience. I have skills in PHP, JavaScript, CSS, HTML, C# and ASP.Net technologies. I am a generalist in my Development fashion but I call myself a Frontend Developer.</p>
             </div>
             </a>
+            <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
         </div>
         <!-- item-end  -->
  <!-- item-start -->
@@ -102,9 +105,11 @@
                 <p>I have some knowledge in SWIFT language for IOS platform. but generally when we call Mobile development, for me it means both native and web based development, including responsive design.</p>
             </div>
             </a>
+            <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
         </div>
         <!-- item-end  -->
     </div>
+    <div class="about-cv-wrapper"><a href="#" class="about-cv">Download My CV</a></div>
     </div>
 </section>
 <?php get_footer(); ?>

@@ -8,29 +8,87 @@
         padding: 0 0 1rem 0;
 
         & h2 {
-            color: lighten($text-color, 10%);
+            color: lighten($text-color, 40%);
             letter-spacing: 3px;
             @include h2;
         }
     }
     &-3d{
         position: absolute;
-        color: lighten($secondary-color, 46%);
-        top: 0;
-        right: 0;
+        color: $white-color;
+        top: -20px;
+        right:-15px;
         transform: translateX(-40%);
-        font-size: calc(4vw + 1rem);
+        font-size: calc(4vw + 1.8rem);
         text-transform: uppercase;
         font-weight: 900;
-        transform: rotateZ(180deg);
         text-shadow: $threedshadow;
         z-index: -1;
+        @include cmx(768){
+            top: 10px;
+        }
+    }
+
+    &-btn {
+        position: absolute;
+        display: block;
+        bottom: 4px;
+        left: 60%;
+        transition: left ease-in 600ms;
+
+    }
+    &-btlink {
+        font-size: 1.2rem;
+        font-weight: 100;
+        color: $secondary-color;
+    }
+    & .arrow {
+        position: absolute;
+        bottom: 4px;
+        width: 50px;
+        height: 8px;
+
+        &-self {
+            fill: lighten($text-color, 20%);
+        }
+    }
+
+    &-cv-wrapper {
+        display: block;
+        widows: 100%;
+        position: relative;
+        margin: 2rem 0 6rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-cv {
+        text-decoration: none;
+        color: rgba($text-color, 0.6);
+        text-transform: uppercase;
+        font-size: 0.753rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        cursor: pointer;
+        padding: 1rem 1.5rem;
+        background-color: $secondary-color;
+        outline: 2px solid $text-color;
+        outline-offset: 6px;
+        margin: 2rem 0;
+        transition: background 500ms ease-in;
+        &:hover {
+            background-color: rgba($text-color, 0.8);
+            color: rgba($white-color, 0.8);
+        }
     }
 }
 .one {
     color: $white-color;
     display: inline-block;
-    width: 5%;
+    width: 10%;
+    @include cmx(768){
+        width: 30px;
+    }
     @include number;
 }
 .services {
@@ -49,28 +107,34 @@
         grid-gap: 20px;
     }
     &-item {
+        position: relative;
         padding: 2rem 1rem;
         @include easeOut;
+        cursor: pointer;
         &:hover {
             box-shadow: $boxshadow;
             color: $white-color;
             transform: translateY(-5%);
-            border-bottom: 4px solid rgba($secondary-color,0.6);
+            outline: 6px solid rgba($secondary-color,0.6);
             .brush-icon, .mobile-icon,  #uxicon, .laptop {
                 transform: scale(1.1);
                 stroke: rgba($text-color, 0.6);
-                fill: rgba($text-color,0.3);
+                fill: rgba($text-color,0.5);
             }
             .brush, .mobile, .laptop.top, .laptop.bottom, .laptop.line, #uxicon .ux.body{
                 stroke: rgba($text-color, 0.6);
+                fill: rgba($text-color,0.5);
             }
             .brush, .mobile.body, #uxicon .ux.body,  #uxicon .ux.gitar, #uxicon .ux.pause, #uxicon .ux.play{
-                fill: rgba($text-color,0.3);
+                fill: rgba($text-color,0.5);
             }
             .mobile.top, .mobile.round, #uxicon .ux.round,#uxicon .ux.bar, #uxicon .ux.top, #uxicon .ux.ux.barfilled{
                 fill: $white-color;
                 transform: scale3d(1.1);
                 transform-origin: center;
+            }
+            .about-btn  {
+                left: 80%;
             }
         }
     }
@@ -94,7 +158,7 @@
         & .cat1 p{
             font-weight: 900;
             font-size: 0.781rem;
-            color: rgba($text-color, 0.8);
+            color: rgba($text-color, 0.6);
         }
     }
 }
@@ -110,7 +174,7 @@
     @include easeOut;
     fill: rgba($secondary-color,0.3);
     stroke:$secondary-color;
-    stroke-width: 1;
+    stroke-width: 2;
 }
 .mobile {
     @include easeOut;
@@ -120,7 +184,7 @@
         fill: rgba($secondary-color,0.4);
         width: 60px;
         height: 90px;
-        stroke-width: 1;
+        stroke-width: 2;
     }
     &.top {
         @include easeOut;
@@ -142,7 +206,7 @@
     width: 60px;
     height: 90px;
     stroke: $secondary-color;
-    stroke-width: 1; 
+    stroke-width: 2; 
     }
     & .ux.gitar {
         @include easeOut;
@@ -192,10 +256,10 @@
         stroke-miterlimit: 10;
     }
     &.top {
-        stroke-width: 1;
+        stroke-width: 2;
     }
     &.bottom {
-        stroke-width: 1;
+        stroke-width: 2;
     
     }
     &.line {
