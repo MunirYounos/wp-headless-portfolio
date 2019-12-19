@@ -44,8 +44,7 @@
     <div class="services">
 
         <!-- item-start -->
-     <div class="services-item">
-            <a href="#" class="services-link">
+     <a href="#" class="services-item">
             <div class="services-icon">
                 <?php include_once "assets/images/brush-icon.php" ?>
             </div>
@@ -55,14 +54,12 @@
             <div class="services-body cat1">
                 <p>Hello, I am Munir, Creative Graphic Designer & Web Developer based in Aarhus Denmark.</p>
             </div>
+            <span class="about-btn"><svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg></span>
         </a>
-        <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
-     </div>
         <!-- item-end  -->
 
      <!-- item-start -->
-        <div class="services-item">
-        <a href="#" class="services-link">
+        <a href="#" class="services-item">
             <div class="services-icon">
                  <?php include_once "assets/images/ux-icon.php" ?>
             </div>
@@ -72,13 +69,12 @@
             <div class="services-body cat3">
                 <p>I do design UI interfaces for websites and mobile applications, in relation to UX design patterns.  I create beautiful and user friendly UIs and mockups.</p>
             </div>
+            <span class="about-btn"><svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg></span>
             </a>
-            <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
-        </div>
         <!-- item-end  -->
          <!-- item-start -->
-         <div class="services-item">
-        <a href="#" class="services-link">
+         <a href="#" class="services-item">
+        <class="services-link">
             <div class="services-icon">
             <?php include "assets/images/laptop.php" ?>
             </div>
@@ -88,13 +84,11 @@
             <div class="services-body cat4">
             <p>I try to create a more beautiful and convenient product experience. I have skills in PHP, JavaScript, CSS, HTML, C# and ASP.Net technologies. I am a generalist in my Development fashion but I call myself a Frontend Developer.</p>
             </div>
+            <span class="about-btn"><svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg></span>
             </a>
-            <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
-        </div>
         <!-- item-end  -->
  <!-- item-start -->
-     <div class="services-item">
-        <a href="#" class="services-link">
+     <a href="#"  class="services-item">
             <div class="services-icon">
             <?php include_once "assets/images/mobile.php" ?>
             </div>
@@ -104,13 +98,186 @@
             <div class="services-body cat2">
                 <p>I have some knowledge in SWIFT language for IOS platform. but generally when we call Mobile development, for me it means both native and web based development, including responsive design.</p>
             </div>
+            <span class="about-btn"><svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg></span>
             </a>
-            <span class="about-btn"><a href="#" class="about-btlink"><svg class="arrow"><polygon class="arrow-self" points="30.32 2.04 23.06 0 23.06 1.57 0 1.57 0 2.57 23.06 2.57 23.06 4.15 30.32 2.04"/></svg></a></span>
-        </div>
         <!-- item-end  -->
     </div>
     <div class="about-cv-wrapper"><a href="#" class="about-cv">Download My CV</a></div>
     </div>
+</section>
+<!-- work section start -->
+<section class="work">
+        <div class="container">
+            <div class="work-3d">my work</div>
+            <div class="work-title">
+                <div class="two">2</div>
+                <h2>My Work</h2>
+            </div>
+            <div class="work-wrapper">
+                <!-- item start  -->
+                <div class="item first">
+                    <div class="item-image first-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <a href="#" class="content first-content">
+                        <div class="content-category">
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="content-title">
+                            <h2>Geopartner Inspections</h2>
+                        </div>
+                        <div class="content-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- item end  -->
+                 <!-- item start  -->
+                 <div class="item">
+                 <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <a href="#" class="content">
+                        <div class="content-category">
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="content-title">
+                            <h2>Geopartner Inspections</h2>
+                        </div>
+                        <div class="content-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- item end  -->
+                 <!-- item start  -->
+                 <div class="item">
+                 <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <a href="#" class="content">
+                        <div class="content-category">
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="content-title">
+                            <h2>Geopartner Inspections</h2>
+                        </div>
+                        <div class="content-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- item end  -->
+                 <!-- item start  -->
+                 <div class="item">
+                 <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <a href="#" class="content">
+                        <div class="content-category">
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="content-title">
+                            <h2>Geopartner Inspections</h2>
+                        </div>
+                        <div class="content-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- item end  -->
+                 <!-- item start  -->
+                 <div class="item">
+                 <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <a href="#" class="content">
+                        <div class="content-category">
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="content-title">
+                            <h2>Geopartner Inspections</h2>
+                        </div>
+                        <div class="content-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- item end  -->
+                 <!-- item start  -->
+                 <div class="item">
+                 <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <a href="#" class="content">
+                        <div class="content-category">
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="content-title">
+                            <h2>Geopartner Inspections</h2>
+                        </div>
+                        <div class="content-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- item end  -->
+               <!-- item start  -->
+                <div class="item">
+                <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <a href="#" class="content">
+                        <div class="content-category">
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="content-title">
+                            <h2>Geopartner Inspections</h2>
+                        </div>
+                        <div class="content-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- item end  -->
+            </div><!-- work-wrapper end  -->
+
+        </div><!-- container end  -->
 </section>
 <?php get_footer(); ?>
 

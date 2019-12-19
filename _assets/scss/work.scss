@@ -1,0 +1,244 @@
+.work {
+    background: rgba($text-color, 0.05);
+    padding: 2rem 0;
+    &-title {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 1rem 0;
+        & h2 {
+            color: lighten($text-color,30%);
+            letter-spacing: 3px;
+            @include h2;
+        }
+    }
+    &-3d{
+        position: absolute;
+        color: $white-color;
+        top: -30px;
+        right:-85px;
+        transform: translateX(-40%);
+        font-size: calc(4vw + 1.8rem);
+        text-transform: uppercase;
+        font-weight: 900;
+        text-shadow: $threedshadow;
+        z-index: -1;
+        @include cmx(768){
+            top: 10px;
+        }
+    }
+
+    & .two{
+        color: $white-color;
+        display: inline-block;
+        width: 10%;
+        @include cmx(768){
+            width: 30px;
+        }
+        @include number;
+    }
+
+    &-wrapper {
+        margin: 2rem 0;
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 20px;
+            align-items: stretch;
+        }
+        @include onlymd {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        & .item {
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            @include cmx (575) {
+                margin-bottom: 1rem;
+            }
+        
+
+            & .item-image {
+                width: 100%;
+                height: auto;
+                padding-bottom: 260px;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: cover;
+                & img {
+                    width: 100%;
+                }    
+    
+            }
+            & .content {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: $white-color;
+                padding: 2rem;
+                text-decoration: none;
+                color: $text-color;
+                @include easeOut;
+                & .content-category {
+                    position: absolute;
+                    background-color: $secondary-color;
+                    color: $white-color;
+                    top: 0;
+                    right: 0;
+                    padding: 12px;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                }
+                & .content-title {
+                    margin-top: 12px;
+                    display: block;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    padding: 1rem 0;
+                    color: $secondary-color;
+
+                }
+                & .content-description {
+                    font-size: 0.788rem;
+                    color: rgba($text-color, 0.6);
+                    padding-bottom: 1rem;
+                }
+
+                & .content-btn {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 32px;
+                    transition: left ease-in 600ms;
+                    & .arrow {  
+                        display: block;
+                        & .arrow {
+                            position: absolute;
+                            bottom: 4px;
+                            left: 0;
+                            width: 34px;
+                            height: 10px;
+                            z-index: 6;
+                            fill: none;
+                            transition: left 600ms ease-in;
+                            &-self {
+                                stroke: lighten($secondary-color, 20%);
+                                stroke-width: 2;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: $secondary-color;
+                    & .content-title, & .content-description {
+                        color: $white-color;
+                    }
+                    & .content-btn .arrow .arrow{
+                        left: 30%;
+                    }
+                    & .content-btn .arrow .arrow .arrow-self {
+                        stroke: $white-color;
+                    }
+                }
+            }
+
+        }
+        @include sm {
+            & .item.first {
+                position: relative;
+                z-index: 1;
+                grid-column: 1/span 2;
+                grid-row: 1/2 ;
+                overflow: hidden;
+                & .item-image.first-image{
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 300px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    & img {
+                        width: 100%;
+                    }
+                    &::after {
+                        content: '';
+                        top:0;
+                        left:0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        position: absolute;
+                        background: darken($secondary-color, 10%);
+                        mix-blend-mode: multiply;
+        
+                    }
+                }
+    
+                & .first-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    background-color: $white-color;
+                    z-index: 2;
+                    width: calc(50% - 10px);
+                    padding: 2rem;
+                    text-decoration: none;
+                    color: $text-color;
+    
+                    & .content-category {
+                        position: absolute;
+                        background-color: $secondary-color;
+                        color: $white-color;
+                        top: 0;
+                        right: 0;
+                        padding: 12px;
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                        transition: 500ms ease-in all;
+                    }
+                    & .content-title {
+                        margin-top: 12px;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        display: block;
+                        padding: 1rem 0;
+                        color: $secondary-color;
+                    }
+                    & .content-description {
+                        font-size: 0.788rem;
+                        color: rgba($text-color, 0.6);
+                    }
+    
+                    &:hover {
+                        background-color: $secondary-color;
+                        & .content-category {
+                            background-color: $white-color;
+                            color: $secondary-color;
+                        }
+                        & .content-title, & .content-description {
+                            color: $white-color;
+                        }
+                        & .content-btn .arrow .arrow{
+                            left: 30%;
+                        }
+                        & .content-btn .arrow .arrow .arrow-self {
+                            stroke: $white-color;
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+
+    }
+
+}
