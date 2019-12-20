@@ -61,15 +61,15 @@
     &-cv {
         position: relative;
         text-decoration: none;
-        color: rgba($white-color, 0.9);
+        color: rgba($text-color, 0.9);
         text-transform: uppercase;
-        font-size: 0.753rem;
+        font-size: 0.683rem;
         font-weight: 700;
         letter-spacing: 3px;
         cursor: pointer;
         padding: 1rem 1.5rem;
-        background-color: $secondary-color;
-        outline: 2px solid $text-color;
+        background-color: rgba($text-color, .1);
+        outline: 2px solid $secondary-color;
         margin: 2rem 0;
         z-index: 5;
         transition: all 500ms ease-in;
@@ -81,11 +81,11 @@
             width: 8%;
             height: 4px;
             z-index: -1;
-            background-color: rgba($text-color, 0.8);
+            background-color: rgba($secondary-color, 0.8);
             transition: 500ms ease-in all;
         }
         &:hover::after{
-            background-color: rgba($text-color, 0.8);
+            background-color: rgba($secondary-color, 0.8);
             width: 100%;
             height: 100%;
    
@@ -122,41 +122,44 @@
     }
     &-item {
         position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
         @include easeOut;
         text-decoration: none;
         cursor: pointer;
         padding: 1rem 1rem;
-        
-        &:hover {
-            box-shadow: $boxshadow;
-            color: $white-color;
-            transform: translateY(-5%);
-            outline: 6px solid rgba($secondary-color,0.6);
-            .brush-icon, .mobile-icon,  #uxicon, .laptop {
-                transform: scale(1.1);
-                stroke: rgba($secondary-color, 0.9);
-                fill: rgba($secondary-color,0.5);
-            }
-            .brush, .mobile, .laptop.top, .laptop.bottom, .laptop.line, #uxicon .ux.body{
-                stroke: rgba($secondary-color, 0.9);
-                fill: rgba($secondary-color,0.3);
-            }
-            .brush, .mobile.body, #uxicon .ux.body,  #uxicon .ux.gitar, #uxicon .ux.pause, #uxicon .ux.play{
-                fill: rgba($secondary-color,0.3);
-            }
-            .mobile.top, .mobile.round, #uxicon .ux.round,#uxicon .ux.bar, #uxicon .ux.top, #uxicon .ux.ux.barfilled{
-                fill: $white-color;
-                transform: scale3d(1.1);
-                transform-origin: center;
-            }
-            .about-btn  {
-                left: 40%;
-            }
-            .services-title {
-                color: rgba($secondary-color, 0.9);
+        @include sm {
+            &:hover {
+                box-shadow: $boxshadow;
+                color: $white-color;
+                transform: translateY(-5%);
+                outline: 6px solid rgba($secondary-color,0.6);
+                .brush-icon, .mobile-icon,  #uxicon, .laptop {
+                    transform: scale(1.1);
+                    stroke: rgba($secondary-color, 0.9);
+                    fill: rgba($secondary-color,0.5);
+                }
+                .brush, .mobile, .laptop.top, .laptop.bottom, .laptop.line, #uxicon .ux.body{
+                    stroke: rgba($secondary-color, 0.9);
+                    fill: rgba($secondary-color,0.3);
+                }
+                .brush, .mobile.body, #uxicon .ux.body,  #uxicon .ux.gitar, #uxicon .ux.pause, #uxicon .ux.play{
+                    fill: rgba($secondary-color,0.3);
+                }
+                .mobile.top, .mobile.round, #uxicon .ux.round,#uxicon .ux.bar, #uxicon .ux.top, #uxicon .ux.ux.barfilled{
+                    fill: $white-color;
+                    transform: scale3d(1.1);
+                    transform-origin: center;
+                }
+                .about-btn  {
+                    left: 40%;
+                }
+                .services-title {
+                    color: rgba($secondary-color, 0.9);
+                }
             }
         }
-
         & .cat1 p{
             font-weight: 700;
             font-size: 0.781rem;

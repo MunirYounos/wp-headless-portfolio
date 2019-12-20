@@ -108,10 +108,10 @@
 <!-- work section start -->
 <section class="work">
         <div class="container">
-            <div class="work-3d">my work</div>
+            <div class="work-3d">Recents</div>
             <div class="work-title">
                 <div class="two">2</div>
-                <h2>My Work</h2>
+                <h2>Recents</h2>
             </div>
             <div class="work-wrapper">
                 <!-- item start  -->
@@ -144,7 +144,7 @@
     
                      <a href="#" class="content">
                         <div class="content-category">
-                            <span>Graphic Design</span>
+                            <span>UI & UX</span>
                         </div>
                         <div class="content-title">
                             <h2>Geopartner Inspections</h2>
@@ -167,7 +167,7 @@
     
                      <a href="#" class="content">
                         <div class="content-category">
-                            <span>Graphic Design</span>
+                            <span>Web Development</span>
                         </div>
                         <div class="content-title">
                             <h2>Geopartner Inspections</h2>
@@ -190,7 +190,7 @@
     
                      <a href="#" class="content">
                         <div class="content-category">
-                            <span>Graphic Design</span>
+                            <span>News</span>
                         </div>
                         <div class="content-title">
                             <h2>Geopartner Inspections</h2>
@@ -213,53 +213,7 @@
     
                      <a href="#" class="content">
                         <div class="content-category">
-                            <span>Graphic Design</span>
-                        </div>
-                        <div class="content-title">
-                            <h2>Geopartner Inspections</h2>
-                        </div>
-                        <div class="content-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
-                        </div>
-                        <div class="content-btn">
-                            <span class="arrow">
-                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <!-- item end  -->
-                 <!-- item start  -->
-                 <div class="item">
-                 <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
-                    </div>
-    
-                     <a href="#" class="content">
-                        <div class="content-category">
-                            <span>Graphic Design</span>
-                        </div>
-                        <div class="content-title">
-                            <h2>Geopartner Inspections</h2>
-                        </div>
-                        <div class="content-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
-                        </div>
-                        <div class="content-btn">
-                            <span class="arrow">
-                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <!-- item end  -->
-               <!-- item start  -->
-                <div class="item">
-                <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
-                    </div>
-    
-                     <a href="#" class="content">
-                        <div class="content-category">
-                            <span>Graphic Design</span>
+                            <span>Mobile Development</span>
                         </div>
                         <div class="content-title">
                             <h2>Geopartner Inspections</h2>

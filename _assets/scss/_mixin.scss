@@ -147,13 +147,14 @@ $screen-xl-min: 1200px;
     background: radial-gradient(circle, rgba(75,98,212,1) 0%, rgba(165,124,54,1) 40%, rgba(144,2,109,1) 63%, rgba(92,16,171,1) 78%, rgba(122,5,29,1) 94%);
 }
 @mixin decoration($at,$al,$bt,$bl,$cl1,$cl2){
-    padding:50px;
+    padding:90px;
     background: rgba($secondary-color, $cl1);
     z-index: 3;
+    border:3rem solid darken($secondary-color, 10%);
     border-radius: 50%;
     &::after, &::before {
         content: '';
-        background: rgba($white-color, $cl2);
+        background: rgba($secondary-color, $cl2);
         position: absolute;
         border-radius: 50%;
         mix-blend-mode: screen;
@@ -163,7 +164,7 @@ $screen-xl-min: 1200px;
         top: -$bt;
         left:$bl;
         padding:25px;
-        border: 2px solid rgba($secondary-color, 0.2);
+        border: 2px solid rgba($white-color, 0.9);
     }
     &::after{
         top: $at;
