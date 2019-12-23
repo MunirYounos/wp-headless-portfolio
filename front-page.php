@@ -115,11 +115,12 @@
             </div>
             <div class="work-wrapper">
                 <!-- item start  -->
-                <div class="item first">
+                <a href="#" class="item first">
                     <div class="item-image first-image" style="background: url('https://source.unsplash.com/user/erondu');">
+
                     </div>
     
-                     <a href="#" class="content first-content">
+                     <div  class="content first-content">
                         <div class="content-category">
                             <span>Graphic Design</span>
                         </div>
@@ -134,15 +135,16 @@
                             <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
                             </span>
                         </div>
-                    </a>
                 </div>
+            </a>
                 <!-- item end  -->
                  <!-- item start  -->
-                 <div class="item">
+                 <a href="#"class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                 <?php include "assets/images/ux-icon.php" ?>
                     </div>
     
-                     <a href="#" class="content">
+                     <div class="content">
                         <div class="content-category">
                             <span>UI & UX</span>
                         </div>
@@ -157,15 +159,16 @@
                             <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
                             </span>
                         </div>
+                    </div>
                     </a>
-                </div>
                 <!-- item end  -->
                  <!-- item start  -->
-                 <div class="item">
+                 <a href="#" class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                 <?php include "assets/images/laptop.php" ?>
                     </div>
     
-                     <a href="#" class="content">
+                     <div class="content">
                         <div class="content-category">
                             <span>Web Development</span>
                         </div>
@@ -180,15 +183,16 @@
                             <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
                             </span>
                         </div>
+                        </div>
                     </a>
-                </div>
                 <!-- item end  -->
                  <!-- item start  -->
-                 <div class="item">
+                 <a href="#" class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                 <?php include "assets/images/mobile.php" ?>
                     </div>
     
-                     <a href="#" class="content">
+                     <div class="content">
                         <div class="content-category">
                             <span>News</span>
                         </div>
@@ -203,15 +207,16 @@
                             <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
                             </span>
                         </div>
+                        </div>
                     </a>
-                </div>
                 <!-- item end  -->
                  <!-- item start  -->
-                 <div class="item">
+                 <a href="#" class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                 <?php include "assets/images/mobile.php" ?>
                     </div>
     
-                     <a href="#" class="content">
+                     <div class="content">
                         <div class="content-category">
                             <span>Mobile Development</span>
                         </div>
@@ -226,12 +231,73 @@
                             <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
                             </span>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
                 <!-- item end  -->
             </div><!-- work-wrapper end  -->
 
         </div><!-- container end  -->
+</section>
+<section class="cv">
+    <div class="container">
+    <div class="cv-3d">My CV</div>
+            <div class="cv-title">
+                <div class="cv-three">3</div>
+                <h2>My CV</h2>
+            </div>
+            <p class="cv-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate delectus vel nesciunt quia ea eos numquam consequuntur itaque consectetur soluta odio eligendi est maxime odit omnis dolores, sint porro fugiat facilis nostrum quos modi ipsam ducimus? Adipisci laudantium iste perferendis, voluptatem dolore sunt harum aut eius quas, recusandae dignissimos!</p>
+
+        <div class="cv-skills">
+            <!-- single-skill start  -->
+            <div class="skill">
+                    <span>Photoshop</span>
+                    <div class="circle-wrapper">
+                        <?php include "assets/images/circle.php" ?>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                        <!-- single-skill start  -->
+                        <div class="skill">
+                    <span>Illustrator</span>
+                    <div class="circle-wrapper">
+                        <?php include "assets/images/circle.php" ?>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                        <!-- single-skill start  -->
+                        <div class="skill">
+                    <span>Php</span>
+                    <div class="circle-wrapper">
+                        <?php include "assets/images/circle.php" ?>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                        <!-- single-skill start  -->
+                        <div class="skill">
+                    <span>C#</span>
+                    <div class="circle-wrapper">
+                        <?php include "assets/images/circle.php" ?>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                        <!-- single-skill start  -->
+                        <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="circle-wrapper">
+                        <?php include "assets/images/circle.php" ?>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                        <!-- single-skill start  -->
+                        <div class="skill">
+                    <span>HTML/CSS</span>
+                    <div class="circle-wrapper">
+                        <?php include "assets/images/circle.php" ?>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+        </div>
+    </div>
 </section>
 <?php get_footer(); ?>
 
