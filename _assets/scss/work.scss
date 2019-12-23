@@ -58,8 +58,12 @@
 
         & .item {
             position: relative;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-color;
             z-index: 0;
             overflow: hidden;
+            @include easeOut;
             @include cmx (575) {
                 margin-bottom: 1rem;
             }
@@ -86,9 +90,27 @@
                     z-index: 1;
                     position: absolute;
                     background: rgba($text-color, 0.4);
+                    transition: background 500ms ease-in;
     
                 }   
-    
+                & .ico {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 12;
+                    transform: translate(-50%, -50%);
+                    @include easeOut;
+                    & .ux{
+                        stroke: $white-color;
+                        &.body {
+                            stroke: $white-color !important;
+                        }
+                    }
+                    & .laptop, & .mobile {
+                        stroke: $white-color;
+                    }
+                }
             }
             & .content {
                 display: block;
@@ -96,7 +118,6 @@
                 height: 100%;
                 background-color: $white-color;
                 padding: 2rem;
-                text-decoration: none;
                 color: $text-color;
                 @include easeOut;
                 & .content-category {
@@ -150,22 +171,33 @@
                     }
                 }
 
-                &:hover {
-                    background-color: $secondary-color;
-                    & .content-category {
-                        background-color: $white-color;
-                        color: $secondary-color;
-                    }
-                    & .content-title, & .content-description {
-                        color: $white-color;
-                    }
-                    & .content-btn .arrow .arrow{
-                        left: 30%;
-                    }
-                    & .content-btn .arrow .arrow .arrow-self {
-                        stroke: $white-color;
-                    }
+
+            }
+
+            &:hover {
+                & .content {
+                background-color: $secondary-color;
                 }
+                & .content .content-category {
+                    background-color: $white-color;
+                    color: $secondary-color;
+                }
+                & .content .content-title, & .content-description {
+                    color: $white-color;
+                }
+                & .content .content-btn .arrow .arrow{
+                    left: 30%;
+                }
+                & .content .content-btn .arrow .arrow .arrow-self {
+                    stroke: $white-color;
+                }
+                & .item-image::after {
+                    background: rgba($text-color, 0.8);
+                }
+                & .item-image .ico {
+                    display: block;
+                }
+
             }
 
         }
@@ -208,8 +240,6 @@
                     z-index: 2;
                     width: calc(50% - 10px);
                     padding: 2rem;
-                    text-decoration: none;
-                    color: $text-color;
     
                     & .content-category {
                         position: absolute;
@@ -234,25 +264,24 @@
                         font-size: 0.788rem;
                         color: rgba($text-color, 0.6);
                     }
-    
-                    &:hover {
-                        background-color: $secondary-color;
-                        & .content-category {
-                            background-color: $white-color;
-                            color: $secondary-color;
-                        }
-                        & .content-title, & .content-description {
-                            color: $white-color;
-                        }
-                        & .content-btn .arrow .arrow{
-                            left: 30%;
-                        }
-                        & .content-btn .arrow .arrow .arrow-self {
-                            stroke: $white-color;
-                        }
+                }
+                &:hover {
+                    & .first-content {
+                    background-color: $secondary-color;
                     }
-    
-    
+                    & .first-content .content-category {
+                        background-color: $white-color;
+                        color: $secondary-color;
+                    }
+                    & .first-content .content-title, & .content-description {
+                        color: $white-color;
+                    }
+                    & .first-content .content-btn .arrow .arrow{
+                        left: 30%;
+                    }
+                    & .first-content .content-btn .arrow .arrow .arrow-self {
+                        stroke: $white-color;
+                    }
                 }
             }
         }
