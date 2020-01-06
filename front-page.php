@@ -251,48 +251,48 @@
             <!-- single-skill start  -->
             <div class="skill">
                     <span>Photoshop</span>
-                    <div class="circle-wrapper">
-                        <?php include "assets/images/circle.php" ?>
-                    </div>
+                      <div class="progress--circle progress--25">
+                         <div class="progress__number">25%</div>
+                     </div>
                 </div>
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
                     <span>Illustrator</span>
-                    <div class="circle-wrapper">
-                        <?php include "assets/images/circle.php" ?>
+                    <div class="progress--circle progress--50">
+                    <div class="progress__number">50%</div>
                     </div>
                 </div>
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
                     <span>Php</span>
-                    <div class="circle-wrapper">
-                        <?php include "assets/images/circle.php" ?>
+                    <div class="progress--circle progress--75">
+                    <div class="progress__number">75%</div>
                     </div>
                 </div>
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
                     <span>C#</span>
-                    <div class="circle-wrapper">
-                        <?php include "assets/images/circle.php" ?>
+                    <div class="progress--circle progress--80">
+                    <div class="progress__number">80%</div>
                     </div>
                 </div>
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
                     <span>JavaScript</span>
-                    <div class="circle-wrapper">
-                        <?php include "assets/images/circle.php" ?>
+                    <div class="progress--circle progress--55">
+                    <div class="progress__number">55%</div>
                     </div>
                 </div>
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
                     <span>HTML/CSS</span>
-                    <div class="circle-wrapper">
-                        <?php include "assets/images/circle.php" ?>
+                    <div class="progress--circle progress--100">
+                    <div class="progress__number">100%</div>
                     </div>
                 </div>
             <!-- single-skill end  -->
