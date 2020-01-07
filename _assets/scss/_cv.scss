@@ -1,6 +1,6 @@
 $spacing: 1rem;
 $themeColor: $secondary-color;
-$backColor: #666;
+$backColor: lighten($text-color, 75%);
 $textShadow: rgba(black, 0.35) 1px 1px 1px;
 .cv{
     position: relative;
@@ -20,14 +20,13 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
     }
     &-3d{
         position: absolute;
-        color: $white-color;
+        color: darken($white-color, 2%);
         top: -30px;
         right:-85px;
         transform: translateX(-40%);
-        font-size: calc(4vw + 1.8rem);
+        font-size: calc(5vw + 1.8rem);
         text-transform: uppercase;
         font-weight: 900;
-        text-shadow: $threedshadow;
         z-index: -1;
         @include cmx(768){
             top: 10px;
@@ -44,30 +43,41 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
         @include number;
     }
     &-me {
-        padding: 1rem 0;
+        padding: 1rem 3rem;
         color: rgba($text-color, 0.6);
-        font-size: 0.788rem;
+        font-size: 0.888rem;
         font-weight: 300;
         line-height: 1.5;
+        text-align: center;
         &::first-letter {
             font-weight: 900;
             color: $secondary-color;
-            font-size: 0.9rem;
+            font-size: 1.2rem;
             padding-right: 1px;
+        }
+        @include sm {
+            padding: 4rem 3rem;
         }
     }
     &-skills {
         padding: 1rem;
-        @include sm {
-            display: grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        @include onlymd() {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include lg{
             grid-template-columns: repeat(6, 1fr);
-            grid-gap: 5px;
-            grid-template-rows: 1fr;
         }
 
         & .skill {
             position: relative;
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             min-width: 100px;
             
 
@@ -76,24 +86,24 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 font-weight: 500;
-                display: block;
+                display: inline-block;
             
             }
             & .progress--circle {
                 position: relative;
                 display: inline-block;
                 margin: $spacing;
-                width: 120px;
-                height: 120px;
+                width: 90px;
+                height: 90px;
                 border-radius: 50%;
                 background-color: $backColor;
                 &:before {
                   content: '';
                   position: absolute;
-                  top: 15px;
-                  left: 15px;
-                  width: 90px;
-                  height: 90px;
+                  top: 10px;
+                  left: 10px;
+                  width: 70px;
+                  height: 70px;
                   border-radius: 50%;
                   background-color: white;
                 }
@@ -112,13 +122,15 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
                         
             .progress__number {
                 position: absolute;
-                top: 50%;
-                width: 100%;
+                top: 56%;
+                left: 50%;
                 line-height: 1;
                 margin-top: -0.75rem;
                 text-align: center;
-                font-size: 1.5rem;
-                color: #777;
+                font-size: 1rem;
+                font-weight: 700;
+                color: lighten($text-color, 60%);
+                transform: translateX(-50%);
               }
         
                 $step: 5;

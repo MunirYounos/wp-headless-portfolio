@@ -200,7 +200,7 @@
                             <h2>Geopartner Inspections</h2>
                         </div>
                         <div class="content-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                            <p>Lorem Ne autem sed provident.</p>
                         </div>
                         <div class="content-btn">
                             <span class="arrow">
@@ -224,7 +224,7 @@
                             <h2>Geopartner Inspections</h2>
                         </div>
                         <div class="content-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
+                            <p>Lorem Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
                         </div>
                         <div class="content-btn">
                             <span class="arrow">
@@ -252,7 +252,7 @@
             <div class="skill">
                     <span>Photoshop</span>
                       <div class="progress--circle progress--25">
-                         <div class="progress__number">25%</div>
+                         <span class="progress__number">25%</span>
                      </div>
                 </div>
             <!-- single-skill end  -->
@@ -260,7 +260,7 @@
                         <div class="skill">
                     <span>Illustrator</span>
                     <div class="progress--circle progress--50">
-                    <div class="progress__number">50%</div>
+                    <span class="progress__number">50%</span>
                     </div>
                 </div>
             <!-- single-skill end  -->
@@ -268,7 +268,7 @@
                         <div class="skill">
                     <span>Php</span>
                     <div class="progress--circle progress--75">
-                    <div class="progress__number">75%</div>
+                    <span class="progress__number">75%</span>
                     </div>
                 </div>
             <!-- single-skill end  -->
@@ -276,7 +276,7 @@
                         <div class="skill">
                     <span>C#</span>
                     <div class="progress--circle progress--80">
-                    <div class="progress__number">80%</div>
+                    <span class="progress__number">80%</span>
                     </div>
                 </div>
             <!-- single-skill end  -->
@@ -284,7 +284,7 @@
                         <div class="skill">
                     <span>JavaScript</span>
                     <div class="progress--circle progress--55">
-                    <div class="progress__number">55%</div>
+                    <span class="progress__number">55%</span>
                     </div>
                 </div>
             <!-- single-skill end  -->
@@ -292,7 +292,7 @@
                         <div class="skill">
                     <span>HTML/CSS</span>
                     <div class="progress--circle progress--100">
-                    <div class="progress__number">100%</div>
+                    <span class="progress__number">100%</span>
                     </div>
                 </div>
             <!-- single-skill end  -->

@@ -20,7 +20,7 @@
         top: -30px;
         right:-85px;
         transform: translateX(-40%);
-        font-size: calc(4vw + 1.8rem);
+        font-size: calc(5vw + 1.8rem);
         text-transform: uppercase;
         font-weight: 900;
         text-shadow: $threedshadow;
@@ -125,11 +125,16 @@
                     background-color: $secondary-color;
                     color: $white-color;
                     top: 0;
-                    right: 0;
                     padding: 12px;
                     z-index: 4;
                     font-size: 0.8rem;
                     font-weight: 400;
+                    @include cmi(576){
+                        right: 0;
+                    }
+                    @include cmx(575){
+                        left: 0;
+                    }
                 }
                 & .content-title {
                     margin-top: 12px;

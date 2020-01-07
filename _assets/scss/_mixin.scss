@@ -150,26 +150,27 @@ $screen-xl-min: 1200px;
     padding:90px;
     background: rgba($secondary-color, $cl1);
     z-index: 3;
-    border:3rem solid darken($secondary-color, 10%);
+    border:1px solid rgba($white-color, 0.6);
     border-radius: 50%;
     &::after, &::before {
         content: '';
-        background: rgba($secondary-color, $cl2);
+        background: rgba($white-color, $cl2);
         position: absolute;
         border-radius: 50%;
-        mix-blend-mode: screen;
+        border:1px solid rgba($secondary-color, 0.6);
+        mix-blend-mode: multiply;
     }
 
     &::before {
         top: -$bt;
         left:$bl;
-        padding:25px;
-        border: 2px solid rgba($white-color, 0.9);
+        padding:75px;
     }
     &::after{
         top: $at;
         left: $al;
-        padding: 20px;
+        padding: 60px;
+        background: rgba($text-color, $cl2);
     }
 
 }
@@ -183,7 +184,6 @@ $screen-xl-min: 1200px;
     line-height: calc(2vw + 1.555rem);
     &::first-letter {
         color: $secondary-color;
-        text-shadow: $threedshadow;
     }
 }
 

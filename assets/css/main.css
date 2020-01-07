@@ -455,32 +455,32 @@ body {
   width: 200px;
   height: 200px;
   padding: 90px;
-  background: rgba(222, 112, 100, 0.5);
+  background: rgba(222, 112, 100, 0.1);
   z-index: 3;
-  border: 3rem solid #d5493a;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
-  mix-blend-mode: multiply;
 }
 
 .decoration-item::after, .decoration-item::before {
   content: '';
-  background: rgba(222, 112, 100, 0.6);
+  background: rgba(255, 255, 255, 0.1);
   position: absolute;
   border-radius: 50%;
-  mix-blend-mode: screen;
+  border: 1px solid rgba(222, 112, 100, 0.6);
+  mix-blend-mode: multiply;
 }
 
 .decoration-item::before {
-  top: 110%;
-  left: 85%;
-  padding: 25px;
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  top: 1%;
+  left: 10%;
+  padding: 75px;
 }
 
 .decoration-item::after {
-  top: -42%;
-  left: 66%;
-  padding: 20px;
+  top: 4%;
+  left: 15%;
+  padding: 60px;
+  background: rgba(17, 17, 17, 0.1);
 }
 
 #logo {
@@ -940,22 +940,20 @@ body {
 
 .about-title h2::first-letter {
   color: #de7064;
-  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
 .about-3d {
   position: absolute;
-  color: white;
+  color: #fafafa;
   top: -20px;
   right: -15px;
   -webkit-transform: translateX(-40%);
       -ms-transform: translateX(-40%);
           transform: translateX(-40%);
-  font-size: -webkit-calc(4vw + 1.8rem);
-  font-size: calc(4vw + 1.8rem);
+  font-size: -webkit-calc(5vw + 1.8rem);
+  font-size: calc(5vw + 1.8rem);
   text-transform: uppercase;
   font-weight: 900;
-  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
   z-index: -1;
 }
 
@@ -1365,7 +1363,6 @@ body {
 
 .work-title h2::first-letter {
   color: #de7064;
-  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
 .work-3d {
@@ -1376,8 +1373,8 @@ body {
   -webkit-transform: translateX(-40%);
       -ms-transform: translateX(-40%);
           transform: translateX(-40%);
-  font-size: -webkit-calc(4vw + 1.8rem);
-  font-size: calc(4vw + 1.8rem);
+  font-size: -webkit-calc(5vw + 1.8rem);
+  font-size: calc(5vw + 1.8rem);
   text-transform: uppercase;
   font-weight: 900;
   text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
@@ -1546,11 +1543,22 @@ body {
   background-color: #de7064;
   color: white;
   top: 0;
-  right: 0;
   padding: 12px;
   z-index: 4;
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+@media (min-width: 576px) {
+  .work-wrapper .item .content .content-category {
+    right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .work-wrapper .item .content .content-category {
+    left: 0;
+  }
 }
 
 .work-wrapper .item .content .content-title {
@@ -1746,22 +1754,20 @@ body {
 
 .cv-title h2::first-letter {
   color: #de7064;
-  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
 .cv-3d {
   position: absolute;
-  color: white;
+  color: #fafafa;
   top: -30px;
   right: -85px;
   -webkit-transform: translateX(-40%);
       -ms-transform: translateX(-40%);
           transform: translateX(-40%);
-  font-size: -webkit-calc(4vw + 1.8rem);
-  font-size: calc(4vw + 1.8rem);
+  font-size: -webkit-calc(5vw + 1.8rem);
+  font-size: calc(5vw + 1.8rem);
   text-transform: uppercase;
   font-weight: 900;
-  text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
   z-index: -1;
 }
 
@@ -1811,39 +1817,67 @@ body {
 }
 
 .cv-me {
-  padding: 1rem 0;
+  padding: 1rem 3rem;
   color: rgba(17, 17, 17, 0.6);
-  font-size: 0.788rem;
+  font-size: 0.888rem;
   font-weight: 300;
   line-height: 1.5;
+  text-align: center;
 }
 
 .cv-me::first-letter {
   font-weight: 900;
   color: #de7064;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding-right: 1px;
+}
+
+@media (min-width: 576px) {
+  .cv-me {
+    padding: 4rem 3rem;
+  }
 }
 
 .cv-skills {
   padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 5px;
 }
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 992px) {
   .cv-skills {
-    display: -ms-grid;
-    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .cv-skills {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
-    grid-gap: 5px;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
   }
 }
 
 .cv-skills .skill {
   position: relative;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 100px;
 }
 
@@ -1852,26 +1886,26 @@ body {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 500;
-  display: block;
+  display: inline-block;
 }
 
 .cv-skills .skill .progress--circle {
   position: relative;
   display: inline-block;
   margin: 1rem;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  background-color: #666;
+  background-color: #d0d0d0;
 }
 
 .cv-skills .skill .progress--circle:before {
   content: '';
   position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 90px;
-  height: 90px;
+  top: 10px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: white;
 }
@@ -1887,13 +1921,17 @@ body {
 
 .cv-skills .skill .progress__number {
   position: absolute;
-  top: 50%;
-  width: 100%;
+  top: 56%;
+  left: 50%;
   line-height: 1;
   margin-top: -0.75rem;
   text-align: center;
-  font-size: 1.5rem;
-  color: #777;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #aaaaaa;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .cv-skills .skill .progress--bar.progress--0:after {
@@ -1901,9 +1939,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--0:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #666), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #de7064), color-stop(50%, #666), color-stop(50%, #666));
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(left, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(90deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #de7064), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(left, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(90deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--5:after {
@@ -1911,8 +1949,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--5:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(342deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(108deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(342deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(108deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--10:after {
@@ -1920,8 +1958,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--10:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(324deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(126deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(324deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(126deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--15:after {
@@ -1929,8 +1967,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--15:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(306deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(144deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(306deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(144deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--20:after {
@@ -1938,8 +1976,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--20:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(288deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(162deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(288deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(162deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--25:after {
@@ -1947,9 +1985,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--25:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #666), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #de7064), color-stop(50%, #666), color-stop(50%, #666));
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(top, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(180deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #de7064), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(top, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(180deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--30:after {
@@ -1957,8 +1995,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--30:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(252deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(198deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(252deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(198deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--35:after {
@@ -1966,8 +2004,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--35:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(234deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(216deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(234deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(216deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--40:after {
@@ -1975,8 +2013,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--40:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(216deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(234deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(216deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(234deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--45:after {
@@ -1984,8 +2022,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--45:after {
-  background-image: -webkit-linear-gradient(left, #666 50%, transparent 50%, transparent), -webkit-linear-gradient(198deg, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #666 50%, transparent 50%, transparent), linear-gradient(252deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(198deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(252deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--50:after {
@@ -1993,9 +2031,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--50:after {
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, #666), color-stop(50%, #666));
-  background-image: -webkit-linear-gradient(right, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(-90deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
+  background-image: -webkit-linear-gradient(right, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-90deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--55:after {
@@ -2003,8 +2041,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--55:after {
-  background-image: -webkit-linear-gradient(162deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(-72deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(162deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-72deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--60:after {
@@ -2012,8 +2050,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--60:after {
-  background-image: -webkit-linear-gradient(144deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(-54deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(144deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-54deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--65:after {
@@ -2021,8 +2059,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--65:after {
-  background-image: -webkit-linear-gradient(126deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(-36deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(126deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-36deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--70:after {
@@ -2030,8 +2068,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--70:after {
-  background-image: -webkit-linear-gradient(108deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(-18deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(108deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-18deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--75:after {
@@ -2039,9 +2077,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--75:after {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #de7064), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, #666), color-stop(50%, #666));
-  background-image: -webkit-linear-gradient(bottom, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(0deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #de7064), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
+  background-image: -webkit-linear-gradient(bottom, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(0deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--80:after {
@@ -2049,8 +2087,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--80:after {
-  background-image: -webkit-linear-gradient(72deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(18deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(72deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(18deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--85:after {
@@ -2058,8 +2096,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--85:after {
-  background-image: -webkit-linear-gradient(54deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(36deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(54deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(36deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--90:after {
@@ -2067,8 +2105,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--90:after {
-  background-image: -webkit-linear-gradient(36deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(54deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(36deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(54deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--95:after {
@@ -2076,8 +2114,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--95:after {
-  background-image: -webkit-linear-gradient(18deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(72deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-linear-gradient(18deg, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(72deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--100:after {
@@ -2085,8 +2123,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--100:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #de7064), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, #666), color-stop(50%, #666));
-  background-image: -webkit-linear-gradient(left, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #666 50%, #666);
-  background-image: linear-gradient(90deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #666 50%, #666);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #de7064), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #de7064), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
+  background-image: -webkit-linear-gradient(left, #de7064 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #de7064 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #de7064 50%, transparent 50%, transparent), linear-gradient(270deg, #de7064 50%, #d0d0d0 50%, #d0d0d0);
 }
 /*# sourceMappingURL=main.css.map */
