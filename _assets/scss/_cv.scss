@@ -22,7 +22,7 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
         position: absolute;
         color: darken($white-color, 2%);
         top: -30px;
-        right:-85px;
+        right:-42px;
         transform: translateX(-40%);
         font-size: calc(5vw + 1.8rem);
         text-transform: uppercase;
@@ -43,12 +43,11 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
         @include number;
     }
     &-me {
-        padding: 1rem 3rem;
+        padding: 2rem 0;
         color: rgba($text-color, 0.6);
         font-size: 0.888rem;
         font-weight: 300;
         line-height: 1.5;
-        text-align: center;
         &::first-letter {
             font-weight: 900;
             color: $secondary-color;
@@ -56,30 +55,37 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
             padding-right: 1px;
         }
         @include sm {
-            padding: 4rem 3rem;
+            padding: 2rem 0rem;
         }
     }
     &-skills {
-        padding: 1rem;
+        margin: 1.4rem 0;
+        padding: 1rem 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 5px;
         @include onlymd() {
             grid-template-columns: repeat(3, 1fr);
+            border: 1px solid rgba($secondary-color, 0.4);
         }
         @include lg{
             grid-template-columns: repeat(6, 1fr);
+            border: 1px solid rgba($secondary-color, 0.4);
         }
 
         & .skill {
             position: relative;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
             min-width: 100px;
-            
+            @include cmx (575){
+                align-items: flex-start;
+            }
+            @include sm {
+                align-items: center;
+            }
 
             & span {
                 color: $secondary-color;
@@ -92,7 +98,7 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
             & .progress--circle {
                 position: relative;
                 display: inline-block;
-                margin: $spacing;
+                margin: $spacing 0;
                 width: 90px;
                 height: 90px;
                 border-radius: 50%;
@@ -122,15 +128,14 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
                         
             .progress__number {
                 position: absolute;
-                top: 56%;
+                top: 50%;
                 left: 50%;
                 line-height: 1;
-                margin-top: -0.75rem;
                 text-align: center;
-                font-size: 1rem;
-                font-weight: 700;
+                font-size: 0.788rem;
+                font-weight: 100;
                 color: lighten($text-color, 60%);
-                transform: translateX(-50%);
+                transform: translate(-50%,-50%);
               }
         
                 $step: 5;

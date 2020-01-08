@@ -2,8 +2,8 @@
 .menu-wrap {
     cursor: pointer;
     z-index: 99 !important;
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 40px;
+    max-height: 40px;
     border-radius: 50%;
     box-sizing: border-box;
     border: 2px solid $secondary-color;
@@ -31,9 +31,9 @@
         top:30px;
     }
     .btn-line {
-        width:24px;
-        height: 3px;
-        margin: 0 0 6px 0;
+        width:18px;
+        height: 2px;
+        margin: -1px 0 6px -1px;
         text-align: left;
         @include easeOut;
         background: $white-color;
@@ -52,13 +52,13 @@
             background-color: $white-color;
             //line one -rotate
             &:nth-child(1) {
-                transform: rotate(45deg) translate(2px, 3px);
+                transform: rotate(45deg) translate(2px, 2px);
             }
 
             //line-3 rotate
             &:nth-child(2) {
-                transform: rotate(-45deg) translate(4px, -4px);
-                width: 24px;
+                transform: rotate(-45deg) translate(3px, -3px);
+                width: 18px;
             }
         }
     }

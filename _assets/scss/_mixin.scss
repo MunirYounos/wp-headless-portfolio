@@ -147,30 +147,31 @@ $screen-xl-min: 1200px;
     background: radial-gradient(circle, rgba(75,98,212,1) 0%, rgba(165,124,54,1) 40%, rgba(144,2,109,1) 63%, rgba(92,16,171,1) 78%, rgba(122,5,29,1) 94%);
 }
 @mixin decoration($at,$al,$bt,$bl,$cl1,$cl2){
-    padding:90px;
+    padding:220px;
     background: rgba($secondary-color, $cl1);
     z-index: 3;
-    border:1px solid rgba($white-color, 0.6);
+    border:1px solid rgba($text-color, 0.1);
     border-radius: 50%;
     &::after, &::before {
         content: '';
-        background: rgba($white-color, $cl2);
+        background: rgba($text-color, $cl2);
         position: absolute;
         border-radius: 50%;
-        border:1px solid rgba($secondary-color, 0.6);
+        border:1px solid rgba($text-color, 0.1);
         mix-blend-mode: multiply;
     }
 
     &::before {
         top: -$bt;
         left:$bl;
-        padding:75px;
+        padding:175px;
     }
     &::after{
         top: $at;
         left: $al;
-        padding: 60px;
+        padding: 130px;
         background: rgba($text-color, $cl2);
+        mix-blend-mode: multiply;
     }
 
 }

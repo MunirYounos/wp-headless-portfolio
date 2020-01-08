@@ -3,13 +3,13 @@
     box-sizing: border-box;
     padding: 0;
     margin:0;
-    
 }
 body{
     font-family: $font-body;
     box-sizing: border-box;
     padding: 0;
     margin:0;
+    
 }
 .main-content-wrap {
     position: relative;
@@ -164,8 +164,8 @@ body{
     grid-column: 3/4;
     grid-row: 1/4;
     cursor: pointer;
-    width: 49px;
-    height: 49px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 30px;
     right: 0;
@@ -188,7 +188,7 @@ body{
 }
 
 .decoration-item{
-grid-column: 2/3;
+grid-column: 2/4;
 grid-row: 2/3;
 position: absolute;
 top: 50%;
@@ -196,7 +196,7 @@ transform: translateY(-50%);
 right: 0;
 width: 200px;
 height: 200px;
-@include decoration(4%,15%,-1%,10%, .1, .1);
+@include decoration(20%,20%, -10%,10%, .1, .1);
 }
 
 #logo {
@@ -356,5 +356,82 @@ animation: anima 13s ease infinite alternate 2.1s;
             z-index: -1;
             height: 100%;
         }
+    }
+}
+
+
+footer {
+    position: relative;
+    margin: 3rem 0 0 0;
+    padding: 1rem;
+    background-color: lighten($text-color, 10%);
+    color: $white-color;
+
+    & .footer-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem 0 0.5rem 0;
+
+        & .footer-title {
+            @include h2;
+            padding: 1rem 0;
+        }
+
+        & .footer-name {
+            padding: 1rem 0;
+        }
+
+        & .footer-phone, .footer-email {
+            position: relative;
+            color: $white-color;
+            font-size: 0.823rem;
+            text-decoration: none;
+            font-weight: 100;
+            padding: 5px 0;
+            letter-spacing: 3px;
+            cursor: pointer;
+            transition: transform ease-in-out 500ms, color ease-in-out 500ms;
+            &::after{
+                content: '';
+                width: 100%;
+                position: absolute;
+                height: 1px;
+                background-color: $secondary-color;
+                bottom: 2px;
+                left:0;
+                transform-origin: right;
+                transform: scale(0);
+                transition: transform ease-in-out 500ms, color ease-in-out 500ms;
+            }
+            &:hover{
+                color: $secondary-color;
+            }
+            &:hover::after{
+                transform: scale(1);
+                transform-origin: left;
+            }
+        }
+
+        & .footer-copy {
+            padding-top: 3rem;
+            font-size: 0.723rem;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+
+        & .logo-svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    & .decor {
+        position: absolute;
+        right: 5px;
+        top: 35%;
+
+
     }
 }

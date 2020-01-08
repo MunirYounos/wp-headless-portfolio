@@ -245,20 +245,38 @@
                 <div class="cv-three">3</div>
                 <h2>My CV</h2>
             </div>
+            <h2 class="cv-inner-title">Profile</h2>
             <p class="cv-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate delectus vel nesciunt quia ea eos numquam consequuntur itaque consectetur soluta odio eligendi est maxime odit omnis dolores, sint porro fugiat facilis nostrum quos modi ipsam ducimus? Adipisci laudantium iste perferendis, voluptatem dolore sunt harum aut eius quas, recusandae dignissimos!</p>
-
+            
+            <h2 class="cv-inner-title">Skills</h2>
         <div class="cv-skills">
             <!-- single-skill start  -->
             <div class="skill">
                     <span>Photoshop</span>
-                      <div class="progress--circle progress--25">
-                         <span class="progress__number">25%</span>
+                      <div class="progress--circle progress--75">
+                         <span class="progress__number">75%</span>
                      </div>
                 </div>
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
                     <span>Illustrator</span>
+                    <div class="progress--circle progress--90">
+                    <span class="progress__number">90%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                        <!-- single-skill start  -->
+                        <div class="skill">
+                    <span>Php</span>
+                    <div class="progress--circle progress--70">
+                    <span class="progress__number">70%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                        <!-- single-skill start  -->
+                        <div class="skill">
+                    <span>C#</span>
                     <div class="progress--circle progress--50">
                     <span class="progress__number">50%</span>
                     </div>
@@ -266,33 +284,65 @@
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
-                    <span>Php</span>
-                    <div class="progress--circle progress--75">
-                    <span class="progress__number">75%</span>
-                    </div>
-                </div>
-            <!-- single-skill end  -->
-                        <!-- single-skill start  -->
-                        <div class="skill">
-                    <span>C#</span>
-                    <div class="progress--circle progress--80">
-                    <span class="progress__number">80%</span>
-                    </div>
-                </div>
-            <!-- single-skill end  -->
-                        <!-- single-skill start  -->
-                        <div class="skill">
                     <span>JavaScript</span>
-                    <div class="progress--circle progress--55">
-                    <span class="progress__number">55%</span>
+                    <div class="progress--circle progress--65">
+                    <span class="progress__number">65%</span>
                     </div>
                 </div>
             <!-- single-skill end  -->
                         <!-- single-skill start  -->
                         <div class="skill">
                     <span>HTML/CSS</span>
-                    <div class="progress--circle progress--100">
-                    <span class="progress__number">100%</span>
+                    <div class="progress--circle progress--90">
+                    <span class="progress__number">90%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                                    <!-- single-skill start  -->
+                                    <div class="skill">
+                    <span>Umbraco CMS</span>
+                    <div class="progress--circle progress--45">
+                    <span class="progress__number">45%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                                    <!-- single-skill start  -->
+                                    <div class="skill">
+                    <span>Wordpress CMS</span>
+                    <div class="progress--circle progress--80">
+                    <span class="progress__number">80%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                                    <!-- single-skill start  -->
+                                    <div class="skill">
+                    <span>Drupal CMS</span>
+                    <div class="progress--circle progress--60">
+                    <span class="progress__number">60%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                                    <!-- single-skill start  -->
+                                    <div class="skill">
+                    <span>SmartWeb</span>
+                    <div class="progress--circle progress--60">
+                    <span class="progress__number">60%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                                    <!-- single-skill start  -->
+                                    <div class="skill">
+                    <span>Magento 2</span>
+                    <div class="progress--circle progress--40">
+                    <span class="progress__number">40%</span>
+                    </div>
+                </div>
+            <!-- single-skill end  -->
+                                    <!-- single-skill start  -->
+                                    <div class="skill">
+                    <span>Sass</span>
+                    <div class="progress--circle progress--70">
+                    <span class="progress__number">70%</span>
                     </div>
                 </div>
             <!-- single-skill end  -->

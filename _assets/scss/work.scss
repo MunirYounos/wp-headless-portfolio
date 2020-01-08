@@ -57,6 +57,7 @@
         }
 
         & .item {
+            display: block;
             position: relative;
             cursor: pointer;
             text-decoration: none;
@@ -65,10 +66,8 @@
             overflow: hidden;
             @include easeOut;
             @include cmx (575) {
-                margin-bottom: 1rem;
+                margin-bottom: 1.4rem;
             }
-        
-
             & .item-image {
                 position: relative;
                 width: 100%;
