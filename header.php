@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/main.min.css">
     <?php wp_head(); ?>
 </head>
-<body>
+<body >
 <!-- main grid  -->
 <div class="container">
 <!-- open close button  -->

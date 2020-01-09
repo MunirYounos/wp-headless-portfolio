@@ -14,6 +14,7 @@
                     <li class="icons-item g"><a href="#" class="icons-link"><i class="fab fa-github"></i></a></li>
                     <li class="icons-item b"><a href="#" class="icons-link"><i class="fab fa-behance"></i></a></li>
                     <li class="icons-item"><a href="tel:60526066" class="icons-link"><i class="fas fa-phone-alt"></i> +45 60 52 60 66</a></li>
+                    <li class="icons-item"><a href="tel:60526066" class="icons-link"><i class="fas fa-search"></i></a></li>
                 </ul>
             </div>
             <div class="decoration-item"></div>
@@ -25,7 +26,7 @@
         </h1>
         <span id="date" class="date">3</span>
         <div class="btn-wrapper">
-            <a href="" class="btn"> View Details
+            <a href="#cv" class="btn"> View Details
             <i class="btn-ar fa fa-long-arrow-right"></i>
             </a>
 
@@ -102,16 +103,15 @@
             </a>
         <!-- item-end  -->
     </div>
-    <div class="about-cv-wrapper"><a href="#" class="about-cv">Download My CV</a></div>
     </div>
 </section>
 <!-- work section start -->
 <section class="work">
         <div class="container">
-            <div class="work-3d">Recents</div>
+            <div class="work-3d">Recent</div>
             <div class="work-title">
                 <div class="two">2</div>
-                <h2>Recents</h2>
+                <h2>Recent Work</h2>
             </div>
             <div class="work-wrapper">
                 <!-- item start  -->
@@ -238,14 +238,16 @@
 
         </div><!-- container end  -->
 </section>
-<section class="cv">
+<section id="cv" class="cv">
     <div class="container">
-    <div class="cv-3d">My CV</div>
+    <div class="cv-3d">Profile</div>
             <div class="cv-title">
                 <div class="cv-three">3</div>
-                <h2>My CV</h2>
+                <h2>Profile</h2>
             </div>
-            <h2 class="cv-inner-title">Profile</h2>
+            <span class="my-portrait">
+                <img src="https://avatars0.githubusercontent.com/u/34443734?s=400&u=87eb9e997bdb88b255a90d6cb647094f211cb78c&v=4" alt="myimage" title="Munir Younosi">
+            </span>
             <p class="cv-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate delectus vel nesciunt quia ea eos numquam consequuntur itaque consectetur soluta odio eligendi est maxime odit omnis dolores, sint porro fugiat facilis nostrum quos modi ipsam ducimus? Adipisci laudantium iste perferendis, voluptatem dolore sunt harum aut eius quas, recusandae dignissimos!</p>
             
             <h2 class="cv-inner-title">Skills</h2>
@@ -347,6 +349,48 @@
                 </div>
             <!-- single-skill end  -->
         </div>
+        <div class="ee">
+            <div class="ex">
+            <i class="e-icon fa fa-wrench"></i>
+            <h2 class="cv-inner-title">Experience</h2>
+            <h3 class="exp-title">Frontend Web Developer - Anodyne A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>August, 2019 - Current</span>
+            <hr class="ee-hr">
+            <h3 class="exp-title">Web Developer - Kraftvaerk A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>August 2018 - November 2018</span>
+            <hr class="ee-hr">
+            <h3 class="exp-title">Frontend Web Developer - AtriumWeb A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>February, 2017 - April, 2017</span>
+            <hr class="ee-hr">
+            <h3 class="exp-title">Multimedia Designer - PR Marketing A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>February 2016 - April 2016</span>
+
+            </div>
+            <div class="ed">
+            <i class="e-icon fa fa-graduation-cap"></i>
+            <h2 class="cv-inner-title">Education</h2>
+            <h3 class="ed-title">Frontend Web Developer - Anodyne A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>August, 2019 - Current</span>
+            <hr class="ee-hr">
+            <h3 class="ed-title">Web Developer - Kraftvaerk A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>August 2018 - November 2018</span>
+            <hr class="ee-hr">
+            <h3 class="ed-title">Frontend Web Developer - AtriumWeb A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>February, 2017 - April, 2017</span>
+            <hr class="ee-hr">
+            <h3 class="ed-title">Multimedia Designer - PR Marketing A/S</h3>
+            <p>Working on Frontend Development for Anodyne A/S. Developing and Maintaining Smartweb and Magento Webshops</p>
+            <span>February 2016 - April 2016</span>
+            </div>
+        </div>
+        <div class="cv-wrapper"><a href="#" class="download-cv">Download My CV</a></div>
     </div>
 </section>
 <?php get_footer(); ?>
