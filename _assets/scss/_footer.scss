@@ -28,7 +28,7 @@ footer {
             color: $white-color;
             font-size: 0.823rem;
             text-decoration: none;
-            font-weight: 100;
+            font-weight: 300;
             padding: 5px 0;
             letter-spacing: 3px;
             cursor: pointer;
@@ -105,6 +105,19 @@ footer {
         position: absolute;
         right: 5px;
         top: 50%;
+
+        & .decoration-item {
+            grid-column: 2/4;
+            grid-row: 2/3;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 200px;
+            height: 200px;
+            @include decoration(20%,20%, -10%,10%, .1, .1);
+            z-index: 0;
+        }
 
 
     }

@@ -30,6 +30,8 @@ function toggleMenu () {
 
 
 
+
+
 //Time counter Dom Elements 
 const time = document.getElementById('time'),
       greeting = document.getElementById('greeting'),
@@ -93,3 +95,10 @@ getDate();
 showTime();
 setbgAndGreet();
 
+
+
+const searchForm = document.querySelector('.search-form');
+domcument.querySelectorAll('.main .icons #search').addEventListener('click', function(e){
+    alert('clicked');
+e.preventDefault();
+});

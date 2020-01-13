@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="main">
-    <video class="main-video" autoplay muted loop>
+    <video class="main-video" autoplay playsinline="playsinline" muted loop>
         <source src="<?php echo get_theme_file_uri("assets/images/office.mp4"); ?>" type="video/mp4">
     </video>
     <div class="container">
@@ -14,7 +14,12 @@
                     <li class="icons-item g"><a href="#" class="icons-link"><i class="fab fa-github"></i></a></li>
                     <li class="icons-item b"><a href="#" class="icons-link"><i class="fab fa-behance"></i></a></li>
                     <li class="icons-item"><a href="tel:60526066" class="icons-link"><i class="fas fa-phone-alt"></i> +45 60 52 60 66</a></li>
-                    <li class="icons-item"><a href="tel:60526066" class="icons-link"><i class="fas fa-search"></i></a></li>
+                    <li  id="search" class="icons-item"><span class="icons-link"><i  class="fa fa-search"></i></span>
+                    <form class="search-form ">
+                        <input class="search-input" type="search" name="search" placeholder="search site">
+                        <button type="submit"><i class='fa-search fa fa-search'></i></button>
+                    </form>
+                    </li>
                 </ul>
             </div>
             <div class="decoration-item"></div>
@@ -141,7 +146,6 @@
                  <!-- item start  -->
                  <a href="#"class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
-                 <?php include "assets/images/ux-icon.php" ?>
                     </div>
     
                      <div class="content">
@@ -165,7 +169,6 @@
                  <!-- item start  -->
                  <a href="#" class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
-                 <?php include "assets/images/laptop.php" ?>
                     </div>
     
                      <div class="content">
@@ -189,7 +192,6 @@
                  <!-- item start  -->
                  <a href="#" class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
-                 <?php include "assets/images/mobile.php" ?>
                     </div>
     
                      <div class="content">
@@ -213,7 +215,6 @@
                  <!-- item start  -->
                  <a href="#" class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
-                 <?php include "assets/images/mobile.php" ?>
                     </div>
     
                      <div class="content">
