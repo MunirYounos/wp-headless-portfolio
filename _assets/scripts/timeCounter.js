@@ -63,8 +63,3 @@ setbgAndGreet();
 
 
 
-const searchForm = document.querySelector('.search-form');
-domcument.querySelectorAll('.main .icons #search').addEventListener('click', function(e){
-    alert('clicked');
-e.preventDefault();
-});

@@ -28,6 +28,10 @@ function toggleMenu () {
     }
 }
 
+const searchForm = document.querySelector('.search-form');
+document.getElementById('search').addEventListener('click', function(e){
+        searchForm.classList.toggle('search-show');
+});
 
 
 
@@ -97,8 +101,4 @@ setbgAndGreet();
 
 
 
-const searchForm = document.querySelector('.search-form');
-domcument.querySelectorAll('.main .icons #search').addEventListener('click', function(e){
-    alert('clicked');
-e.preventDefault();
-});
+

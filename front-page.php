@@ -15,11 +15,12 @@
                     <li class="icons-item b"><a href="#" class="icons-link"><i class="fab fa-behance"></i></a></li>
                     <li class="icons-item"><a href="tel:60526066" class="icons-link"><i class="fas fa-phone-alt"></i> +45 60 52 60 66</a></li>
                     <li  id="search" class="icons-item"><span class="icons-link"><i  class="fa fa-search"></i></span>
-                    <form class="search-form ">
-                        <input class="search-input" type="search" name="search" placeholder="search site">
-                        <button type="submit"><i class='fa-search fa fa-search'></i></button>
-                    </form>
                     </li>
+
+                    <form class="search-form ">
+                        <input class="search-input" type="search" name="search" placeholder="Search Site">
+                        <button type="submit">Submit</button>
+                    </form>
                 </ul>
             </div>
             <div class="decoration-item"></div>

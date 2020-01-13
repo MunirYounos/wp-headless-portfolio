@@ -113,6 +113,7 @@ body{
         transform: translateX(-50%);
     }
     &-ul {
+        position: relative;
         list-style: none;
         margin-top: 40px;
         display: flex;
@@ -160,9 +161,90 @@ body{
         }
 
     }
-    & .search-form {
-        display: none;
+    & .search-form{
+        display: block;
+        visibility: hidden;
+        width: 5%;
+        & input[type=search]{
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 0%;
+            padding: 12px;
+            border: none;
+            background: white;
+            line-height: 12px;
+            transition: all 500ms ease-in-out;
+            &:focus {
+                
+                outline: none;
+            }
+        }
+        & button{
+            cursor: pointer;
+            border: none;
+            font-size: 12px;
+            line-height: 12px;
+            color: $white-color;
+            text-transform: uppercase;
+            background: $secondary-color;
+            padding: 12px;
+            position: absolute;
+            top: 0;
+            right: 100%;
+            transition: all 800ms ease;
+
+            &:hover {
+                background-color: lighten($secondary-color, 20%);
+                color: $text-color;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
     }
+    & .search-form.search-show{
+        display: block;
+        visibility: visible;
+
+        & input[type=search]{
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 70%;
+            padding: 12px;
+            border: none;
+            background: white;
+            line-height: 12px;
+            transition: width 800ms ease;
+            &:focus {
+                outline: none;
+            }
+        }
+        & button{
+            cursor: pointer;
+            border: none;
+            font-size: 12px;
+            line-height: 12px;
+            color: $white-color;
+            text-transform: uppercase;
+            background: $secondary-color;
+            padding: 12px;
+            position: absolute;
+            top: 0;
+            right: calc(100% - 71%);
+            transition: all 1000ms ease;
+
+            &:hover {
+                background-color: lighten($secondary-color, 20%);
+                color: $text-color;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+ 
 
 }
 // svg logo 

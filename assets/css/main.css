@@ -342,6 +342,7 @@ body {
 }
 
 .icons-ul {
+  position: relative;
   list-style: none;
   margin-top: 40px;
   display: -webkit-box;
@@ -415,7 +416,99 @@ body {
 }
 
 .icons .search-form {
-  display: none;
+  display: block;
+  visibility: hidden;
+  width: 5%;
+}
+
+.icons .search-form input[type=search] {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0%;
+  padding: 12px;
+  border: none;
+  background: white;
+  line-height: 12px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.icons .search-form input[type=search]:focus {
+  outline: none;
+}
+
+.icons .search-form button {
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  text-transform: uppercase;
+  background: #de7064;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  -webkit-transition: all 800ms ease;
+  transition: all 800ms ease;
+}
+
+.icons .search-form button:hover {
+  background-color: #f0beb8;
+  color: #111;
+}
+
+.icons .search-form button:focus {
+  outline: none;
+}
+
+.icons .search-form.search-show {
+  display: block;
+  visibility: visible;
+}
+
+.icons .search-form.search-show input[type=search] {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 70%;
+  padding: 12px;
+  border: none;
+  background: white;
+  line-height: 12px;
+  -webkit-transition: width 800ms ease;
+  transition: width 800ms ease;
+}
+
+.icons .search-form.search-show input[type=search]:focus {
+  outline: none;
+}
+
+.icons .search-form.search-show button {
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+  line-height: 12px;
+  color: white;
+  text-transform: uppercase;
+  background: #de7064;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  right: -webkit-calc(100% - 71%);
+  right: calc(100% - 71%);
+  -webkit-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+
+.icons .search-form.search-show button:hover {
+  background-color: #f0beb8;
+  color: #111;
+}
+
+.icons .search-form.search-show button:focus {
+  outline: none;
 }
 
 .logo {
