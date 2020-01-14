@@ -248,8 +248,8 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
                 color: $secondary-color;
                 margin: 1rem 0;
             }
-            & .ee-hr {
-                color: transparent;
+            & hr.ee-hr {
+                border: 0;
                 border-bottom: 1px solid rgba($secondary-color, 0.1);
                 margin: 1rem 2rem 1rem 0;
 

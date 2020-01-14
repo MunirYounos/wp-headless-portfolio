@@ -1,11 +1,8 @@
-<?php get_header(); ?>
-<?php while(have_posts()){
-    the_post(); ?>
-<section class="main-sub">
+<section class="main">
     <div class="container">
-        <div class="main-content-sub">
+        <div class="main-content-wrap">
             <div class="logo"><a href="http://multimunir.com/">
-                <?php include_once "assets/images/logo.php" ?></a>
+                <?php include "assets/images/logo.php" ?></a>
             </div>
             <div class="icons">
                 <ul class="icons-ul">
@@ -25,13 +22,3 @@
         </div>
     </div>
 </section>
-
-    <section class="content">
-        <div class="container">
-        <h2><a href="<?php echo the_permalink(); ?>"><?php echo the_title(); ?></a></h2>
-            <?php the_content(); ?>
-        </div>
-    </section>
-
-<?php } ?>
-<?php get_footer(); ?>

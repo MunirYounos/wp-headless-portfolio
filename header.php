@@ -38,7 +38,7 @@
             <a href="<?php echo site_url("/privacy-policy"); ?>" class="nav-link">Work</a>
         </li>
         <li class="nav-item">
-            <a href="/contact.html" class="nav-link">Reach me</a>
+            <a href="#" class="nav-link">Reach me</a>
         </li>
     </ul>
    

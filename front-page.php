@@ -44,7 +44,7 @@
     <div class="container">
     <span class="about-3d">about</span>
     <div class="about-title">
-        <div class="one">1</div>
+        <div class="one">01</div>
         <h2>About</h2>
     </div>
 
@@ -116,7 +116,7 @@
         <div class="container">
             <div class="work-3d">Recent</div>
             <div class="work-title">
-                <div class="two">2</div>
+                <div class="two">02</div>
                 <h2>Recent Work</h2>
             </div>
             <div class="work-wrapper">
@@ -244,7 +244,7 @@
     <div class="container">
     <div class="cv-3d">Profile</div>
             <div class="cv-title">
-                <div class="cv-three">3</div>
+                <div class="cv-three">03</div>
                 <h2>Profile</h2>
             </div>
             <span class="my-portrait">

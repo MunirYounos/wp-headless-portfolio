@@ -31,6 +31,7 @@ function toggleMenu () {
 const searchForm = document.querySelector('.search-form');
 document.getElementById('search').addEventListener('click', function(e){
         searchForm.classList.toggle('search-show');
+        
 });
 
 
