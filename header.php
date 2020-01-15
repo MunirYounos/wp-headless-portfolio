@@ -35,7 +35,7 @@
             <a href="<?php echo site_url("/sample-page"); ?>" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-            <a href="<?php echo site_url("/privacy-policy"); ?>" class="nav-link">Work</a>
+            <a href="<?php echo site_url(); ?>" class="nav-link">Work</a>
         </li>
         <li class="nav-item">
             <a href="#" class="nav-link">Reach me</a>

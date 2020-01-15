@@ -454,18 +454,27 @@ animation: anima 13s ease infinite alternate 2.1s;
     background-color: lighten($text-color, 10%);
 
 
+
     & .main-content-sub {
-        padding:0 0 30px 0;
+        padding:0 0 150px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        @include md {
+            padding:0 0 30px 0;
+        }
         & .logo {
             flex: 1;
         }
         & .icons {
             flex: 3;
-            max-width: 55%;
+            max-width: 65%;
+            @include sm {
+                max-width: 55%;
+            }
+            @include onlymd{
+                max-width:75%;
+            }
         }
     }
 }
