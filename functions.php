@@ -11,6 +11,7 @@ add_action('wp_enqueue_scripts', 'portfolio_resources');
 
 function portfolio_features(){
     add_theme_support("title-tag");
+    register_nav_menu('headerMenuLocation', 'Header Menu Location');
 }
 
 add_action("after_setup_theme", "portfolio_features");

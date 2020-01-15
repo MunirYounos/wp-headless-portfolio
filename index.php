@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-<?php while(have_posts()){
-    the_post(); ?>
 <section class="main-sub">
     <div class="container">
         <div class="main-content-sub">
@@ -25,7 +23,8 @@
         </div>
     </div>
 </section>
-
+<?php while(have_posts()){
+    the_post(); ?>
     <section class="content">
         <div class="container">
         <h2><a href="<?php echo the_permalink(); ?>"><?php echo the_title(); ?></a></h2>

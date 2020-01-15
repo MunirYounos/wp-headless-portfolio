@@ -192,7 +192,7 @@ $screen-xl-min: 1200px;
     font-size: calc(1.5vw + 2rem);
     font-weight: 900;
     z-index: 5;
-    padding: 10px 0 8px 0;
+    padding: 10px 12px 8px 0;
     font-family: sans-serif;
     color: lighten($secondary-color, 30%);
     text-shadow: $threedshadow;
@@ -212,4 +212,12 @@ $screen-xl-min: 1200px;
     &::before {
         bottom: 0;
     }
+}
+
+@mixin textP {
+    color: lighten($text-color, 30%);
+    font-size: 0.823rem;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: $font-body;
 }

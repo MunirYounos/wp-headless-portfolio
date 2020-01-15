@@ -217,6 +217,9 @@ body{
             background: white;
             line-height: 12px;
             transition: width 800ms ease;
+            @include cmx(575) {
+                width: 77%;
+            }
             &:focus {
                 outline: none;
             }
@@ -232,9 +235,11 @@ body{
             padding: 12px;
             position: absolute;
             top: 0;
-            right: calc(100% - 71%);
+            right: calc(100% - 70%);
             transition: all 800ms ease;
-
+            @include cmx(575) {
+                right: calc(100% - 77%);
+            }
             &:hover {
                 background-color: lighten($secondary-color, 20%);
                 color: $text-color;
@@ -449,12 +454,10 @@ animation: anima 13s ease infinite alternate 2.1s;
 }
 
 .main-sub {
+    position: relative;
     padding:0;
     margin: 0 auto 3rem;
     background-color: lighten($text-color, 10%);
-
-
-
     & .main-content-sub {
         padding:0 0 150px 0;
         display: flex;
@@ -476,5 +479,78 @@ animation: anima 13s ease infinite alternate 2.1s;
                 max-width:75%;
             }
         }
+
+
     }
+
+    & .breadcrumbs {
+        display: inline-block;
+        position: absolute;
+        bottom: -0.6rem;
+        left: 0;
+        &-item {
+            font-size: 0.599rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $white-color;
+            text-decoration: none;
+            background: $secondary-color;
+            padding: 0.4rem 0.8rem;
+            &:nth-child(2){
+                margin-left:-0.3rem;
+                background: darken($secondary-color, 20%);
+            }
+        }   
+
+    }
+
+}
+
+.content  {
+    & p {
+       @include textP;
+    }
+}
+
+//child links
+.child-pages{
+    margin-top:2rem;
+    display: block;
+    width: 100%;
+    & .is-flex {
+        display: flex;
+        justify-content: start;
+
+        & .child-list {
+
+      
+            & li {
+                display: inline;
+                & a {
+                    font-size: 0.599rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    color: $white-color;
+                    text-decoration: none;
+                    background: $secondary-color;
+                    padding: 0.4rem 0.8rem;
+                   
+                }
+            }
+    
+    
+    
+        }
+        & span a {
+            margin-right: 0.255rem;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.699rem;
+            font-weight: 300;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $white-color;
+            background: darken($secondary-color, 20%);
+        }
+    }
+
 }

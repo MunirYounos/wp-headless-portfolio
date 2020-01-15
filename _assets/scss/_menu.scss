@@ -74,6 +74,7 @@
     &.show {
         visibility: visible;
         text-align: left;
+
     }
 
     &-nav {
@@ -106,6 +107,8 @@
         }
         &.show {
             transform: translate3d(0, 0, 0);
+
+
         }
     }
 
@@ -130,6 +133,10 @@
             &:hover{
                 color: $secondary-color;
             }
+        }
+
+        &.current-page.show a {
+            color: darken($secondary-color, 10%);
         }
     }
 

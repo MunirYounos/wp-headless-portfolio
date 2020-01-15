@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/main.min.css">
     <?php wp_head(); ?>
 </head>
-<body >
+<body <?php body_class(); ?>>
 <!-- main grid  -->
 <div class="container">
 <!-- open close button  -->
@@ -25,7 +25,7 @@
 <!-- Main Navigation  -->
 <nav class="menu">
     <ul class="menu-nav">
-         <li class="nav-item">
+         <li <?php if (is_page('about') or wp_get_post_parent_id(0) == 2){ echo 'class="nav-item current-page"'; } else { echo 'class="nav-item"'; } ?>>
             <a href="<?php echo site_url(); ?>" class="nav-link"><img src="<?php echo get_theme_file_uri("assets/images/logo.gif");?>" alt="logo" width="60"></a>
         </li>
         <li class="nav-item">
@@ -35,7 +35,10 @@
             <a href="<?php echo site_url("/sample-page"); ?>" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-            <a href="<?php echo site_url(); ?>" class="nav-link">Work</a>
+            <a href="<?php echo site_url("/privacy-policy"); ?>" class="nav-link">Work</a>
+        </li>
+        <li class="nav-item">
+            <a href="<?php echo site_url("/blog"); ?>" class="nav-link">Blog</a>
         </li>
         <li class="nav-item">
             <a href="#" class="nav-link">Reach me</a>

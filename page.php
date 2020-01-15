@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-<?php while(have_posts()){
-    the_post(); ?>
+
 <section class="main-sub">
     <div class="container">
         <div class="main-content-sub">
@@ -23,19 +22,58 @@
                 </ul>
             </div>
         </div>
+
+        <?php
+
+            $ParentId = wp_get_post_parent_id(get_the_ID());
+            if($ParentId){ ?>
+                <div class="breadcrumbs">
+                <a href="<?php echo get_permalink($ParentId); ?>" class="breadcrumbs-item"> Back to <?php echo get_the_title($ParentId); ?></a>
+                <span class="breadcrumbs-item"><?php echo the_title(); ?></span>
+                </div>
+           <?php }
+        ?>
+
     </div>
 </section>
 
+<?php while(have_posts()){
+    the_post(); ?>
     <section class="content">
         <div class="container">
             <h2><?php the_title(); ?></h2>
             <?php the_content(); ?>
         </div>
     </section>
+<?php } ?>
 
+<?php 
+$testArray = get_pages(array(
+    'child_of' => get_the_ID()
 
-
-
+));
+if ($ParentId or $testArray) {?>
+    <div class="child-pages">
+    <div class="container">
+        <div class="is-flex">
+        <span><a href="<?php echo get_the_permalink($ParentId); ?>"><?php echo get_the_title($ParentId); ?></a></span>
+        <ul class="child-list">
+        <?php  
+            if($ParentId){
+                $findChildreOf = $ParentId;
+            } else {
+                $findChildreOf = get_the_ID();
+            }
+            wp_list_pages(array(
+                'title_li' => NULL,
+                'child_of' => $findChildreOf  
+            ));
+        ?>
+        </ul>
+        </div>
+    </div>
+</div>
 
 <?php } ?>
+
 <?php get_footer(); ?>
