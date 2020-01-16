@@ -823,7 +823,7 @@ body {
 .main-sub {
   position: relative;
   padding: 0;
-  margin: 0 auto 3rem;
+  margin: 0 auto 0rem;
   background-color: #2b2b2b;
 }
 
@@ -1754,6 +1754,13 @@ body {
   color: #de7064;
 }
 
+.work-wrapper .item .content .meta-box span {
+  margin-bottom: 0.5rem;
+  font-size: 0.599rem;
+  font-weight: 300;
+  color: #b53527;
+}
+
 .work-wrapper .item .content .content-description {
   font-size: 0.788rem;
   color: rgba(17, 17, 17, 0.6);
@@ -1799,7 +1806,7 @@ body {
   color: #de7064;
 }
 
-.work-wrapper .item:hover .content .content-title, .work-wrapper .item:hover .content-description {
+.work-wrapper .item:hover .content .content-title, .work-wrapper .item:hover .content-description p {
   color: white;
 }
 
@@ -1901,6 +1908,13 @@ body {
   .work-wrapper .item.first:hover .first-content .content-btn .arrow .arrow .arrow-self {
     stroke: white;
   }
+}
+
+.blog .work-wrapper .item .content .meta-box .name {
+  margin-bottom: 0.8rem;
+  font-size: 0.699rem;
+  font-weight: 300;
+  color: #b53527;
 }
 
 .cv {
@@ -2455,7 +2469,7 @@ body {
 
 footer {
   position: relative;
-  margin: 3rem 0 0 0;
+  margin: 0;
   padding: 10rem 0 6rem 0;
   background-color: #2b2b2b;
   color: white;

@@ -144,6 +144,15 @@
                     color: $secondary-color;
 
                 }
+
+                & .meta-box {
+                    & span {
+                        margin-bottom: 0.5rem;
+                        font-size: 0.599rem;
+                        font-weight: 300;
+                        color: darken($secondary-color, 20%);
+                    }
+                }
                 & .content-description {
                     font-size: 0.788rem;
                     color: rgba($text-color, 0.6);
@@ -186,7 +195,7 @@
                     background-color: $white-color;
                     color: $secondary-color;
                 }
-                & .content .content-title, & .content-description {
+                & .content .content-title, & .content-description p{
                     color: $white-color;
                 }
                 & .content .content-btn .arrow .arrow{
@@ -292,4 +301,23 @@
 
     }
 
+}
+
+.blog {
+    & .work {
+        &-wrapper {
+            & .item {
+                & .content {
+                    & .meta-box {
+                        & .name {
+                            margin-bottom: 0.8rem;
+                            font-size: 0.699rem;
+                            font-weight: 300;
+                            color: darken($secondary-color, 20%);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

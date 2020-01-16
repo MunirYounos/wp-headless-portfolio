@@ -23,14 +23,47 @@
         </div>
     </div>
 </section>
+<section class="work">
+        <div class="container">
+            <div class="work-title">
+                <div class="two">01</div>
+                <h2>Recent Work</h2>
+            </div>
+            <div class="work-wrapper">
 <?php while(have_posts()){
     the_post(); ?>
-    <section class="content">
-        <div class="container">
-        <h2><a href="<?php echo the_permalink(); ?>"><?php echo the_title(); ?></a></h2>
-            <?php the_content(); ?>
-        </div>
-    </section>
+                 <!-- item start  -->
+                 <a href="<?php echo the_permalink(); ?>" class="item">
+                 <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
+                    </div>
+    
+                     <div class="content">
+                        <div class="content-category">
+                            <span>Mobile Development</span>
+                        </div>
+                        <div class="content-title">
+                            <h2><?php echo the_title(); ?></h2>
+                        </div>
+                        <div class="meta-box">
+                            <span class="name">
+                               Posted by <?php the_author(); ?> on 3.5.20
+                            </span>
+                        </div>
+                        <div class="content-description">
+                            <p> <?php the_content(); ?></p>
+                        </div>
+                        <div class="content-btn">
+                            <span class="arrow">
+                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <!-- item end  -->
 
 <?php } ?>
+
+</div><!-- work-wrapper end  -->
+        </div><!-- container end  -->
+</section>
 <?php get_footer(); ?>

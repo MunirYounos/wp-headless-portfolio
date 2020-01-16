@@ -456,7 +456,7 @@ animation: anima 13s ease infinite alternate 2.1s;
 .main-sub {
     position: relative;
     padding:0;
-    margin: 0 auto 3rem;
+    margin: 0 auto 0rem;
     background-color: lighten($text-color, 10%);
     & .main-content-sub {
         padding:0 0 150px 0;
