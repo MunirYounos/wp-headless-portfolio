@@ -1,0 +1,16 @@
+.single {
+    & .single-content {
+        margin: 3rem 0;
+        & .meta-box {
+            & span {
+                margin-bottom: 0.5rem;
+                font-size: 0.599rem;
+                font-weight: 300;
+                color: darken($secondary-color, 20%);
+            }
+        }
+        & p {
+            @include textP;
+         }
+    }
+}

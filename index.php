@@ -33,20 +33,25 @@
 <?php while(have_posts()){
     the_post(); ?>
                  <!-- item start  -->
-                 <a href="<?php echo the_permalink(); ?>" class="item">
+                 <div  class="item">
+                     <a class="item-link" href="<?php echo the_permalink(); ?>">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
                     </div>
     
                      <div class="content">
                         <div class="content-category">
-                            <span>Mobile Development</span>
+                            <span><?php 
+                                foreach((get_the_category()) as $category){
+                                    echo $category->cat_name . ' ';
+                                }
+                            ?></span>
                         </div>
                         <div class="content-title">
                             <h2><?php echo the_title(); ?></h2>
                         </div>
                         <div class="meta-box">
                             <span class="name">
-                               Posted by <?php the_author(); ?> on 3.5.20
+                               Posted by <?php the_author(); ?> on <?php the_time('F, j . Y'); ?>
                             </span>
                         </div>
                         <div class="content-description">
@@ -57,13 +62,18 @@
                             <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
                             </span>
                         </div>
-                    </div>
-                </a>
+                     </div>
+                     </a>
+                </div>
                 <!-- item end  -->
 
 <?php } ?>
 
 </div><!-- work-wrapper end  -->
-        </div><!-- container end  -->
+
+<div class="pagination">
+<?php echo paginate_links(); ?>
+</div>
+</div><!-- container end  -->
 </section>
 <?php get_footer(); ?>

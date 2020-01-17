@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <section class="main-sub">
     <div class="container">
         <div class="main-content-sub">
@@ -23,57 +22,27 @@
             </div>
         </div>
 
-        <?php
-
-            $ParentId = wp_get_post_parent_id(get_the_ID());
-            if($ParentId){ ?>
-                <div class="breadcrumbs">
-                <a href="<?php echo get_permalink($ParentId); ?>" class="breadcrumbs-item"> Back to <?php echo get_the_title($ParentId); ?></a>
+        <div class="breadcrumbs">
+                <a href="<?php echo site_url('/blog'); ?>" class="breadcrumbs-item">Back to Blog Home</a>
                 <span class="breadcrumbs-item"><?php echo the_title(); ?></span>
                 </div>
-           <?php }
-        ?>
-
     </div>
 </section>
-<section class="page-content">
+<div class="single-content">
         <div class="container">
-<?php while(have_posts()){
-    the_post(); ?>
+        <?php 
+        while(have_posts()){
+            the_post(); ?>
 
             <h2><?php the_title(); ?></h2>
-            <?php the_content(); ?>
+                         <div class="meta-box">
+                            <span class="name">
+                               Posted by <?php the_author(); ?> on <?php the_time('F, j . Y'); ?>
+                            </span>
+                        </div>
+            <p><?php the_content(); ?></p>
 
-<?php } ?>
-</div>
-</section>
-<?php 
-$testArray = get_pages(array(
-    'child_of' => get_the_ID()
-
-));
-if ($ParentId or $testArray) {?>
-    <div class="child-pages">
-    <div class="container">
-        <div class="is-flex">
-        <span><a href="<?php echo get_the_permalink($ParentId); ?>"><?php echo get_the_title($ParentId); ?></a></span>
-        <ul class="child-list">
-        <?php  
-            if($ParentId){
-                $findChildreOf = $ParentId;
-            } else {
-                $findChildreOf = get_the_ID();
-            }
-            wp_list_pages(array(
-                'title_li' => NULL,
-                'child_of' => $findChildreOf  
-            ));
-        ?>
-        </ul>
+        <?php } ?>
         </div>
     </div>
-</div>
-
-<?php } ?>
-
 <?php get_footer(); ?>

@@ -1,0 +1,52 @@
+.blog {
+    & .work {
+        &-wrapper {
+            & .item {
+                & .content {
+                    & .meta-box {
+                        & .name {
+                            margin-bottom: 0.8rem;
+                            font-size: 0.699rem;
+                            font-weight: 300;
+                            color: darken($secondary-color, 20%);
+                        }
+                    }
+                }
+
+                &-atag {
+                    display: block;
+                }
+            }
+
+
+        }
+
+        & .pagination {
+            width: 100%;
+            text-align: center;
+         
+
+            & .page-numbers {
+                padding: 12px 24px;
+                margin: 4px;
+                color: $white-color;
+                font-size: 0.599rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: $secondary-color;
+                &.current {
+                    background-color: lighten($text-color, 30%);
+                    outline: 4px solid $secondary-color;
+                }
+            }
+
+            & a{
+            transition: opacity 500ms ease-in;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+

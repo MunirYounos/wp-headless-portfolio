@@ -1,0 +1,54 @@
+.page {
+    & .page-content {
+        margin: 3rem 0;
+
+
+        & p {
+            @include textP;
+         }
+
+
+    }
+    //child links
+.child-pages{
+    margin:2rem 0;
+    display: block;
+    width: 100%;
+    & .is-flex {
+        display: flex;
+        justify-content: start;
+
+        & .child-list {
+
+      
+            & li {
+                display: inline;
+                & a {
+                    font-size: 0.599rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    color: $white-color;
+                    text-decoration: none;
+                    background: $secondary-color;
+                    padding: 0.4rem 0.8rem;
+                   
+                }
+            }
+    
+    
+    
+        }
+        & span a {
+            margin-right: 0.255rem;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.699rem;
+            font-weight: 300;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $white-color;
+            background: darken($secondary-color, 20%);
+        }
+    }
+
+}
+}
