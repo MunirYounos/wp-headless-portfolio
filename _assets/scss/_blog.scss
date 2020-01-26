@@ -1,7 +1,10 @@
-.blog {
+.blog , .archive {
     & .work {
         &-wrapper {
             & .item {
+                &-link {
+                    text-decoration: none;
+                }
                 & .content {
                     & .meta-box {
                         & .name {
@@ -9,6 +12,8 @@
                             font-size: 0.699rem;
                             font-weight: 300;
                             color: darken($secondary-color, 20%);
+
+
                         }
                     }
                 }

@@ -26,7 +26,7 @@
 <section class="work">
         <div class="container">
             <div class="work-title">
-                <h2>New Posts</h2>
+                <h2><?php the_archive_title(); ?></h2>
             </div>
             <div class="work-wrapper">
 <?php while(have_posts()){

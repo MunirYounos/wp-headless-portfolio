@@ -1884,23 +1884,27 @@ body {
   }
 }
 
-.blog .work-wrapper .item .content .meta-box .name {
+.blog .work-wrapper .item-link, .archive .work-wrapper .item-link {
+  text-decoration: none;
+}
+
+.blog .work-wrapper .item .content .meta-box .name, .archive .work-wrapper .item .content .meta-box .name {
   margin-bottom: 0.8rem;
   font-size: 0.699rem;
   font-weight: 300;
   color: #b53527;
 }
 
-.blog .work-wrapper .item-atag {
+.blog .work-wrapper .item-atag, .archive .work-wrapper .item-atag {
   display: block;
 }
 
-.blog .work .pagination {
+.blog .work .pagination, .archive .work .pagination {
   width: 100%;
   text-align: center;
 }
 
-.blog .work .pagination .page-numbers {
+.blog .work .pagination .page-numbers, .archive .work .pagination .page-numbers {
   padding: 12px 24px;
   margin: 4px;
   color: white;
@@ -1910,17 +1914,17 @@ body {
   background-color: #de7064;
 }
 
-.blog .work .pagination .page-numbers.current {
+.blog .work .pagination .page-numbers.current, .archive .work .pagination .page-numbers.current {
   background-color: #5e5e5e;
   outline: 4px solid #de7064;
 }
 
-.blog .work .pagination a {
+.blog .work .pagination a, .archive .work .pagination a {
   -webkit-transition: opacity 500ms ease-in;
   transition: opacity 500ms ease-in;
 }
 
-.blog .work .pagination a:hover {
+.blog .work .pagination a:hover, .archive .work .pagination a:hover {
   opacity: 0.6;
 }
 
@@ -1985,6 +1989,21 @@ body {
   font-size: 0.599rem;
   font-weight: 300;
   color: #b53527;
+}
+
+.single .single-content .meta-box span a {
+  background: #de7064;
+  padding: 1px 2px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2px;
+  -webkit-transition: background ease-in 500ms;
+  transition: background ease-in 500ms;
+}
+
+.single .single-content .meta-box span a:hover {
+  background: #b53527;
 }
 
 .single .single-content p {
