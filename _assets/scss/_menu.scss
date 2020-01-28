@@ -135,7 +135,7 @@
             }
         }
 
-        &.current-page.show a {
+        &.current-link.show a {
             color: darken($secondary-color, 10%);
         }
     }

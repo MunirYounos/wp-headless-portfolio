@@ -44,7 +44,7 @@
     <div class="container">
     <span class="about-3d">about</span>
     <div class="about-title">
-        <div class="one">01</div>
+        <div class="one">1</div>
         <h2>About</h2>
     </div>
 
@@ -112,38 +112,73 @@
     </div>
 </section>
 <!-- work section start -->
-<section class="work">
+<section class="design">
         <div class="container">
-            <div class="work-3d">Recent</div>
+            <div class="design-3d">Design</div>
+            <div class="design-title">
+                <div class="two">2</div>
+                <h2>Recent</h2>
+            </div>
+
+
+            <div class="design-wrapper">
+
+                 <?php $recentDesignElement = new WP_Query(array(
+
+                     'posts_per_page' => 1,
+                     'category_name' => 'graphic-design'
+                  )); 
+                  
+                  while ($recentDesignElement->have_posts()){
+                    $recentDesignElement->the_post(); ?>
+                        <!-- item start  -->
+                        <a href="<?php the_permalink(); ?>" class="item first">
+                                            <div class="item-image first-image" style="background: url('https://unsplash.it/1200/675?random');">
+
+                                            </div>
+                            
+                                            <div  class="content first-content">
+                                                <div class="content-category">
+                                                    <span><?php                      foreach((get_the_category()) as $category){
+                                                        echo $category->cat_name . ' ';
+                                                      } ?></span>
+                                                </div>
+                                                <div class="content-title">
+                                                    <h2><?php the_title(); ?></h2>
+                                                </div>
+                                                <div class="meta-box">
+                                                    <span class="name">
+                                                    Posted by <?php the_author(); ?> on <?php the_time('F, j . Y'); ?>
+                                                    </span>
+                                                </div>
+                                                <div class="content-description">
+                                                    <p>                <?php echo wp_trim_words(get_the_content(), 20); ?></p>
+                                                </div>
+                                                <div class="content-btn">
+                                                    <span class="arrow">
+                                                    <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
+                                                    </span>
+                                                </div>
+                                        </div>
+                                    </a>
+
+
+                  <?php }  wp_reset_postdata(); ?>
+               
+
+            </div> 
+            <!-- end of the work wrapper  -->
+  </section>
+
+
+  <section class="work">
+        <div class="container">
+            <div class="work-3d">Work</div>
             <div class="work-title">
-                <div class="two">02</div>
-                <h2>Recent Work</h2>
+                <div class="two">3</div>
+                <h2>Recent </h2>
             </div>
             <div class="work-wrapper">
-                <!-- item start  -->
-                <a href="#" class="item first">
-                    <div class="item-image first-image" style="background: url('https://source.unsplash.com/user/erondu');">
-
-                    </div>
-    
-                     <div  class="content first-content">
-                        <div class="content-category">
-                            <span>Graphic Design</span>
-                        </div>
-                        <div class="content-title">
-                            <h2>Geopartner Inspections</h2>
-                        </div>
-                        <div class="content-description">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio magni tenetur assumenda deleniti asperiores debitis illum, autem sed provident.</p>
-                        </div>
-                        <div class="content-btn">
-                            <span class="arrow">
-                            <svg class="arrow"><path class="arrow-self" d="M0 5.14815H32M32 5.14815L27.5644 1M32 5.14815L27.5644 9"/></svg>
-                            </span>
-                        </div>
-                </div>
-            </a>
-                <!-- item end  -->
                  <!-- item start  -->
                  <a href="#"class="item">
                  <div class="item-image" style="background: url('https://source.unsplash.com/user/erondu');">
@@ -244,7 +279,7 @@
     <div class="container">
     <div class="cv-3d">Profile</div>
             <div class="cv-title">
-                <div class="cv-three">03</div>
+                <div class="cv-three">4</div>
                 <h2>Profile</h2>
             </div>
             <span class="my-portrait">

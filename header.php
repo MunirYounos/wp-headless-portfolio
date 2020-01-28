@@ -25,19 +25,19 @@
 <!-- Main Navigation  -->
 <nav class="menu">
     <ul class="menu-nav">
-         <li <?php if (is_page('about') or wp_get_post_parent_id(0) == 2){ echo 'class="nav-item current-page"'; } else { echo 'class="nav-item"'; } ?>>
+         <li class="nav-item">
             <a href="<?php echo site_url(); ?>" class="nav-link"><img src="<?php echo get_theme_file_uri("assets/images/logo.gif");?>" alt="logo" width="60"></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if(is_page('home') or wp_get_post_parent_id(0) == 9) echo 'current-link'; ?>">
             <a href="<?php echo site_url(); ?>" class="nav-link">Home</a>
         </li>
-        <li class="nav-item">
-            <a href="<?php echo site_url("/sample-page"); ?>" class="nav-link">About</a>
+        <li class="nav-item <?php if(is_page('sample-page') or wp_get_post_parent_id(0) == 2) echo 'current-link'; ?>">
+            <a class="nav-link " href="<?php echo site_url("/sample-page"); ?>">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if(is_page('privacy-policy') or wp_get_post_parent_id(0) == 3) echo 'current-link'; ?>">
             <a href="<?php echo site_url("/privacy-policy"); ?>" class="nav-link">Work</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item <?php if(get_post_type() == 'post') echo 'current-link'; ?>">
             <a href="<?php echo site_url("/blog"); ?>" class="nav-link">Blog</a>
         </li>
         <li class="nav-item">
