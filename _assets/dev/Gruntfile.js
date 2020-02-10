@@ -187,7 +187,7 @@
 					authKey: 'dev'
 				},
 				src: '<%= path.root %>',
-				dest: 'wp-content/themes/portfolio/',
+				dest: '/public_html/wp-content/themes/portfolio/',
 				simple: true,
 				exclusions: [
 					'_assets',
@@ -205,7 +205,7 @@
 					authKey: 'live'
 				},
 				src: '<%= path.root %>',
-				dest: 'wp-content/themes/portfolio/',
+				dest: '/public_html/wp-content/themes/portfolio/',
 				simple: true,
 				exclusions: [
 					'assets',

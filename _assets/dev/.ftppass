@@ -1,8 +1,8 @@
 {
   "dev": {
-    "host": "ftp.multimunir.com",
-    "username": "multimunir.com",
-    "password": "$@258525FTPftp258525@$"
+    "host": "cp01.nordicway.dk",
+    "username": "checkmed",
+    "password": "mO04w*V!z9X9uT"
   },
   "live": {
     "host": "",
