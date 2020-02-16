@@ -21,10 +21,10 @@ $textShadow: rgba(black, 0.35) 1px 1px 1px;
     &-3d{
         position: absolute;
         color: darken($white-color, 2%);
-        top: -30px;
-        right:-42px;
+        top: -15px;
+        right:0px;
         transform: translateX(-40%);
-        font-size: calc(5vw + 1.8rem);
+        font-size: calc(4vw + 1.5rem);
         text-transform: uppercase;
         font-weight: 900;
         z-index: -1;

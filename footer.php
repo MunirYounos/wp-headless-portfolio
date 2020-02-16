@@ -10,6 +10,7 @@
         <h2 class="footer-title">Contact me</h2>
         <h3 class="footer-name">Munir Younosi</h3>
         <a href="tel:+4560526066" class="footer-phone">+45 60 52 60 66</a>
+        <a href="mailto:munir@checkme.dk" class="footer-email">munir@checkme.dk</a>
         <a href="mailto:eaaamy@gmail.com" class="footer-email">eaaamy@gmail.com</a>
         <div class="footer-icons">
                 <ul class="footer-icons-ul">
