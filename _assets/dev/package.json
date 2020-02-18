@@ -9,7 +9,7 @@
   "author": "munir",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.1.2",
+    "autoprefixer": "^9.7.4",
     "grunt": "^1.0.2",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^0.14.0",

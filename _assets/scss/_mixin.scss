@@ -201,9 +201,9 @@ $screen-xl-min: 1200px;
         content: '';
         width: 20%;
         z-index: 6;
-        height: 4px;
+        height: 1px;
         left: 0;
-        background-color: $secondary-color;
+        background-color: rgba($secondary-color, 0.2);
 
     }
     &::after{

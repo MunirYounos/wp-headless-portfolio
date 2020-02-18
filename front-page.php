@@ -5,7 +5,7 @@
     </video>
     <div class="container">
         <div class="main-content-wrap">
-            <div class="logo"><a href="http://multimunir.com/">
+            <div class="logo"><a href="<?php echo site_url(); ?>">
                 <?php include_once "assets/images/logo.php" ?></a>
             </div>
             <div class="icons">
