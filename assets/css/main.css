@@ -218,7 +218,7 @@ body {
   font-weight: 500;
   border-top: 2px solid white;
   color: white;
-  background-color: #eb6666;
+  background-color: #d652aa;
   padding: 8px 12px;
   z-index: 6;
   -webkit-transform-origin: bottom;
@@ -307,7 +307,7 @@ body {
 }
 
 .main-title-second {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .main-title::before, .main-title::after {
@@ -388,7 +388,7 @@ body {
   width: 100%;
   position: absolute;
   height: 1px;
-  background-color: #eb6666;
+  background-color: #d652aa;
   bottom: -5px;
   left: 0;
   -webkit-transform-origin: right;
@@ -404,7 +404,7 @@ body {
 }
 
 .icons-link:hover {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .icons-link:hover::after {
@@ -450,7 +450,7 @@ body {
   line-height: 12px;
   color: white;
   text-transform: uppercase;
-  background: #eb6666;
+  background: #d652aa;
   padding: 12px;
   position: absolute;
   top: 0;
@@ -460,7 +460,7 @@ body {
 }
 
 .icons .search-form button:hover {
-  background-color: #f7c0c0;
+  background-color: #eaa4d3;
   color: #111;
 }
 
@@ -503,7 +503,7 @@ body {
   line-height: 12px;
   color: white;
   text-transform: uppercase;
-  background: #eb6666;
+  background: #d652aa;
   padding: 12px;
   position: absolute;
   top: 0;
@@ -521,7 +521,7 @@ body {
 }
 
 .icons .search-form.search-show button:hover {
-  background-color: #f7c0c0;
+  background-color: #eaa4d3;
   color: #111;
 }
 
@@ -559,7 +559,7 @@ body {
 }
 
 .logo-svg .one:hover {
-  fill: #eb6666;
+  fill: #d652aa;
 }
 
 .decoration-item {
@@ -574,7 +574,7 @@ body {
   width: 200px;
   height: 200px;
   padding: 220px;
-  background: rgba(235, 102, 102, 0.1);
+  background: rgba(214, 82, 170, 0.1);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 50%;
   z-index: 3;
@@ -625,7 +625,7 @@ body {
 #logo .name.one {
   stroke-dasharray: 448.80340576171875px;
   stroke-dashoffset: 448.80340576171875px;
-  stroke: #eb6666;
+  stroke: #d652aa;
   -webkit-animation: anima 3s ease infinite alternate;
           animation: anima 3s ease infinite alternate;
 }
@@ -768,7 +768,7 @@ body {
 
 .btn-wrapper .btn {
   position: relative;
-  border: 2px solid #eb6666;
+  border: 2px solid #d652aa;
   background: rgba(255, 255, 255, 0.188);
   color: white;
   display: inline;
@@ -801,7 +801,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: #eb6666;
+  background: #d652aa;
   height: 4px;
   width: 16%;
   -webkit-transform-origin: left;
@@ -812,7 +812,7 @@ body {
 }
 
 .btn-wrapper .btn:hover::after {
-  background: rgba(235, 102, 102, 0.688);
+  background: rgba(214, 82, 170, 0.688);
   -webkit-transform-origin: right;
       -ms-transform-origin: right;
           transform-origin: right;
@@ -887,13 +887,13 @@ body {
   text-transform: uppercase;
   color: white;
   text-decoration: none;
-  background: #eb6666;
+  background: #d652aa;
   padding: 0.4rem 0.8rem;
 }
 
 .main-sub .breadcrumbs-item:nth-child(2) {
   margin-left: -0.3rem;
-  background: #d01b1b;
+  background: #9d2575;
 }
 
 .content p {
@@ -912,7 +912,7 @@ body {
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 2px solid #eb6666;
+  border: 2px solid #d652aa;
   background: transparent;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
@@ -969,7 +969,7 @@ body {
 
 .menu-wrap.close {
   background: #fc4445;
-  border: 2px solid #eb6666;
+  border: 2px solid #d652aa;
 }
 
 .menu-wrap.close .btn-line {
@@ -1081,11 +1081,11 @@ body {
 }
 
 .menu .nav-item a:hover {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .menu .nav-item.current-link.show a {
-  color: #e53939;
+  color: #c62f94;
 }
 
 .menu-btn {
@@ -1143,7 +1143,7 @@ body {
 }
 
 .about-title h2::first-letter {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .about-3d {
@@ -1186,7 +1186,7 @@ body {
 }
 
 .about .arrow-self {
-  stroke: #f7c0c0;
+  stroke: #eaa4d3;
   stroke-width: 2;
 }
 
@@ -1201,7 +1201,7 @@ body {
   z-index: 5;
   padding: 10px 12px 8px 0;
   font-family: sans-serif;
-  color: #fdeded;
+  color: #f3cee7;
   text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
@@ -1218,7 +1218,7 @@ body {
   z-index: 6;
   height: 1px;
   left: 0;
-  background-color: rgba(235, 102, 102, 0.2);
+  background-color: rgba(214, 82, 170, 0.2);
 }
 
 .one::after {
@@ -1274,21 +1274,21 @@ body {
     -webkit-transform: translateY(-5%);
         -ms-transform: translateY(-5%);
             transform: translateY(-5%);
-    outline: 6px solid rgba(235, 102, 102, 0.6);
+    outline: 6px solid rgba(214, 82, 170, 0.6);
   }
   .services-item:hover .brush-icon, .services-item:hover .mobile-icon, .services-item:hover #uxicon, .services-item:hover .laptop {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
-    stroke: rgba(235, 102, 102, 0.9);
-    fill: rgba(235, 102, 102, 0.5);
+    stroke: rgba(214, 82, 170, 0.9);
+    fill: rgba(214, 82, 170, 0.5);
   }
   .services-item:hover .brush, .services-item:hover .mobile, .services-item:hover .laptop.top, .services-item:hover .laptop.bottom, .services-item:hover .laptop.line, .services-item:hover #uxicon .ux.body {
-    stroke: rgba(235, 102, 102, 0.9);
-    fill: rgba(235, 102, 102, 0.3);
+    stroke: rgba(214, 82, 170, 0.9);
+    fill: rgba(214, 82, 170, 0.3);
   }
   .services-item:hover .brush, .services-item:hover .mobile.body, .services-item:hover #uxicon .ux.body, .services-item:hover #uxicon .ux.gitar, .services-item:hover #uxicon .ux.pause, .services-item:hover #uxicon .ux.play {
-    fill: rgba(235, 102, 102, 0.3);
+    fill: rgba(214, 82, 170, 0.3);
   }
   .services-item:hover .mobile.top, .services-item:hover .mobile.round, .services-item:hover #uxicon .ux.round, .services-item:hover #uxicon .ux.bar, .services-item:hover #uxicon .ux.top, .services-item:hover #uxicon .ux.ux.barfilled {
     fill: white;
@@ -1302,14 +1302,14 @@ body {
     left: 40%;
   }
   .services-item:hover .services-title {
-    color: rgba(235, 102, 102, 0.9);
+    color: rgba(214, 82, 170, 0.9);
   }
 }
 
 .services-item .cat1 p {
   font-weight: 700;
   font-size: 0.781rem;
-  color: rgba(235, 102, 102, 0.6);
+  color: rgba(214, 82, 170, 0.6);
 }
 
 .services-title {
@@ -1504,7 +1504,7 @@ body {
 }
 
 .design-title h2::first-letter {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .design-3d {
@@ -1540,7 +1540,7 @@ body {
   z-index: 5;
   padding: 10px 12px 8px 0;
   font-family: sans-serif;
-  color: #fdeded;
+  color: #f3cee7;
   text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
@@ -1557,7 +1557,7 @@ body {
   z-index: 6;
   height: 1px;
   left: 0;
-  background-color: rgba(235, 102, 102, 0.2);
+  background-color: rgba(214, 82, 170, 0.2);
 }
 
 .design .two::after {
@@ -1679,7 +1679,7 @@ body {
 
 .design-wrapper .item .content .content-category {
   position: absolute;
-  background-color: #eb6666;
+  background-color: #d652aa;
   color: white;
   top: 0;
   padding: 12px;
@@ -1723,7 +1723,7 @@ body {
   margin-bottom: 0.5rem;
   font-size: 0.599rem;
   font-weight: 300;
-  color: #d01b1b;
+  color: #9d2575;
 }
 
 .design-wrapper .item .content .content-description {
@@ -1758,25 +1758,25 @@ body {
 }
 
 .design-wrapper .item .content .content-btn .arrow .arrow-self {
-  stroke: #f7c0c0;
+  stroke: #eaa4d3;
   stroke-width: 2;
 }
 
 .design-wrapper .item:hover .content {
-  background-color: #eb6666;
+  background-color: #d652aa;
 }
 
 .design-wrapper .item:hover .content .content-category {
   background-color: white;
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .design-wrapper .item:hover .content .meta-box span {
-  color: #fdeded;
+  color: #f3cee7;
 }
 
 .design-wrapper .item:hover .content .content-category .post-categories li a {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .design-wrapper .item:hover .content .content-title, .design-wrapper .item:hover .content-description p {
@@ -1825,7 +1825,7 @@ body {
     height: 100%;
     z-index: 1;
     position: absolute;
-    background: #f7c0c0;
+    background: #eaa4d3;
     mix-blend-mode: multiply;
   }
   .design-wrapper .item.first .first-content {
@@ -1848,7 +1848,7 @@ body {
   }
   .design-wrapper .item.first .first-content .content-category {
     position: absolute;
-    background-color: #eb6666;
+    background-color: #d652aa;
     color: white;
     top: 0;
     right: 0;
@@ -1864,21 +1864,21 @@ body {
     font-weight: 500;
     display: block;
     padding: 1rem 0;
-    color: #eb6666;
+    color: #d652aa;
   }
   .design-wrapper .item.first .first-content .content-description {
     font-size: 0.788rem;
     color: rgba(17, 17, 17, 0.6);
   }
   .design-wrapper .item.first:hover .first-content {
-    background-color: #eb6666;
+    background-color: #d652aa;
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
   }
   .design-wrapper .item.first:hover .first-content .content-category {
     background-color: white;
-    color: #eb6666;
+    color: #d652aa;
   }
   .design-wrapper .item.first:hover .first-content .content-title, .design-wrapper .item.first:hover .content-description {
     color: white;
@@ -1925,7 +1925,7 @@ body {
 }
 
 .work-title h2::first-letter {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .work-3d {
@@ -1962,7 +1962,7 @@ body {
   z-index: 5;
   padding: 10px 12px 8px 0;
   font-family: sans-serif;
-  color: #fdeded;
+  color: #f3cee7;
   text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
@@ -1979,7 +1979,7 @@ body {
   z-index: 6;
   height: 1px;
   left: 0;
-  background-color: rgba(235, 102, 102, 0.2);
+  background-color: rgba(214, 82, 170, 0.2);
 }
 
 .work .two::after {
@@ -2100,7 +2100,7 @@ body {
 
 .work-wrapper .item .content .content-category {
   position: absolute;
-  background-color: #eb6666;
+  background-color: #d652aa;
   color: white;
   top: 0;
   padding: 12px;
@@ -2144,7 +2144,7 @@ body {
   margin-bottom: 0.5rem;
   font-size: 0.599rem;
   font-weight: 300;
-  color: #d01b1b;
+  color: #9d2575;
 }
 
 .work-wrapper .item .content .content-description {
@@ -2179,25 +2179,25 @@ body {
 }
 
 .work-wrapper .item .content .content-btn .arrow .arrow-self {
-  stroke: #f7c0c0;
+  stroke: #eaa4d3;
   stroke-width: 2;
 }
 
 .work-wrapper .item:hover .content {
-  background-color: #eb6666;
+  background-color: #d652aa;
 }
 
 .work-wrapper .item:hover .content .content-category {
   background-color: white;
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .work-wrapper .item:hover .content .meta-box span {
-  color: #fdeded;
+  color: #f3cee7;
 }
 
 .work-wrapper .item:hover .content .content-category .post-categories li a {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .work-wrapper .item:hover .content .content-title, .work-wrapper .item:hover .content-description p {
@@ -2247,7 +2247,7 @@ body {
     height: 100%;
     z-index: 1;
     position: absolute;
-    background: #f7c0c0;
+    background: #eaa4d3;
     mix-blend-mode: multiply;
   }
   .work-wrapper .item.first .first-content {
@@ -2262,7 +2262,7 @@ body {
   }
   .work-wrapper .item.first .first-content .content-category {
     position: absolute;
-    background-color: #eb6666;
+    background-color: #d652aa;
     color: white;
     top: 0;
     right: 0;
@@ -2278,18 +2278,18 @@ body {
     font-weight: 500;
     display: block;
     padding: 1rem 0;
-    color: #eb6666;
+    color: #d652aa;
   }
   .work-wrapper .item.first .first-content .content-description {
     font-size: 0.788rem;
     color: rgba(17, 17, 17, 0.6);
   }
   .work-wrapper .item.first:hover .first-content {
-    background-color: #eb6666;
+    background-color: #d652aa;
   }
   .work-wrapper .item.first:hover .first-content .content-category {
     background-color: white;
-    color: #eb6666;
+    color: #d652aa;
   }
   .work-wrapper .item.first:hover .first-content .content-title, .work-wrapper .item.first:hover .content-description {
     color: white;
@@ -2310,7 +2310,7 @@ body {
   margin-bottom: 0.8rem;
   font-size: 0.699rem;
   font-weight: 300;
-  color: #d01b1b;
+  color: #9d2575;
 }
 
 .blog .work-wrapper .item-atag, .archive .work-wrapper .item-atag {
@@ -2329,12 +2329,12 @@ body {
   font-size: 0.599rem;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #eb6666;
+  background-color: #d652aa;
 }
 
 .blog .work .pagination .page-numbers.current, .archive .work .pagination .page-numbers.current {
   background-color: #5e5e5e;
-  outline: 4px solid #eb6666;
+  outline: 4px solid #d652aa;
 }
 
 .blog .work .pagination a, .archive .work .pagination a {
@@ -2383,7 +2383,7 @@ body {
   text-transform: uppercase;
   color: white;
   text-decoration: none;
-  background: #eb6666;
+  background: #d652aa;
   padding: 0.4rem 0.8rem;
 }
 
@@ -2395,7 +2395,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  background: #d01b1b;
+  background: #9d2575;
 }
 
 .single .single-content {
@@ -2406,11 +2406,11 @@ body {
   margin-bottom: 0.5rem;
   font-size: 0.599rem;
   font-weight: 300;
-  color: #d01b1b;
+  color: #9d2575;
 }
 
 .single .single-content .meta-box span a {
-  background: #eb6666;
+  background: #d652aa;
   padding: 1px 2px;
   color: white;
   text-decoration: none;
@@ -2421,7 +2421,7 @@ body {
 }
 
 .single .single-content .meta-box span a:hover {
-  background: #d01b1b;
+  background: #9d2575;
 }
 
 .single .single-content p {
@@ -2466,7 +2466,7 @@ body {
 }
 
 .cv-title h2::first-letter {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .cv-3d {
@@ -2501,7 +2501,7 @@ body {
   z-index: 5;
   padding: 10px 12px 8px 0;
   font-family: sans-serif;
-  color: #fdeded;
+  color: #f3cee7;
   text-shadow: 0 1px 1px #f7f7f7, 0 2px 0 #dddddd, 0 3px 0 #c4c4c4, 0 4px 0 #b7b7b7, 0 5px 0 #9d9d9d;
 }
 
@@ -2518,7 +2518,7 @@ body {
   z-index: 6;
   height: 1px;
   left: 0;
-  background-color: rgba(235, 102, 102, 0.2);
+  background-color: rgba(214, 82, 170, 0.2);
 }
 
 .cv-three::after {
@@ -2534,7 +2534,7 @@ body {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  border: 1px solid rgba(235, 102, 102, 0.1);
+  border: 1px solid rgba(214, 82, 170, 0.1);
   border-radius: 50%;
   margin-top: 2rem;
   cursor: pointer;
@@ -2554,7 +2554,7 @@ body {
 
 .cv-me::first-letter {
   font-weight: 900;
-  color: #eb6666;
+  color: #d652aa;
   font-size: 1.2rem;
   padding-right: 1px;
 }
@@ -2572,7 +2572,7 @@ body {
 }
 
 .cv-inner-title::first-letter {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 .cv-skills {
@@ -2587,14 +2587,14 @@ body {
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   .cv-skills {
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid rgba(235, 102, 102, 0.0841);
+    border: 1px solid rgba(214, 82, 170, 0.0841);
   }
 }
 
 @media (min-width: 992px) {
   .cv-skills {
     grid-template-columns: repeat(6, 1fr);
-    border: 1px solid rgba(235, 102, 102, 0.0841);
+    border: 1px solid rgba(214, 82, 170, 0.0841);
   }
 }
 
@@ -2630,7 +2630,7 @@ body {
 }
 
 .cv-skills .skill span {
-  color: #eb6666;
+  color: #d652aa;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 500;
@@ -2664,7 +2664,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #eb6666;
+  background-color: #d652aa;
 }
 
 .cv-skills .skill .progress__number {
@@ -2686,9 +2686,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--0:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #eb6666), color-stop(50%, #d0d0d0), to(#d0d0d0));
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(left, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(90deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #d652aa), color-stop(50%, #d0d0d0), to(#d0d0d0));
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(left, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(90deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--5:after {
@@ -2696,8 +2696,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--5:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(342deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(108deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(342deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(108deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--10:after {
@@ -2705,8 +2705,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--10:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(324deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(126deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(324deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(126deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--15:after {
@@ -2714,8 +2714,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--15:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(306deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(144deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(306deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(144deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--20:after {
@@ -2723,8 +2723,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--20:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(288deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(162deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(288deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(162deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--25:after {
@@ -2732,9 +2732,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--25:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #eb6666), color-stop(50%, #d0d0d0), to(#d0d0d0));
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(top, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(180deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #d652aa), color-stop(50%, #d0d0d0), to(#d0d0d0));
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(top, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(180deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--30:after {
@@ -2742,8 +2742,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--30:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(252deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(198deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(252deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(198deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--35:after {
@@ -2751,8 +2751,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--35:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(234deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(216deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(234deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(216deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--40:after {
@@ -2760,8 +2760,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--40:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(216deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(234deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(216deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(234deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--45:after {
@@ -2769,8 +2769,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--45:after {
-  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(198deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(252deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(198deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(252deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--50:after {
@@ -2778,9 +2778,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--50:after {
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #eb6666), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #eb6666), color-stop(50%, #d0d0d0), to(#d0d0d0));
-  background-image: -webkit-linear-gradient(right, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(-90deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #d652aa), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #d652aa), color-stop(50%, #d0d0d0), to(#d0d0d0));
+  background-image: -webkit-linear-gradient(right, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-90deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--55:after {
@@ -2788,8 +2788,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--55:after {
-  background-image: -webkit-linear-gradient(162deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(-72deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(162deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-72deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--60:after {
@@ -2797,8 +2797,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--60:after {
-  background-image: -webkit-linear-gradient(144deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(-54deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(144deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-54deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--65:after {
@@ -2806,8 +2806,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--65:after {
-  background-image: -webkit-linear-gradient(126deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(-36deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(126deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-36deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--70:after {
@@ -2815,8 +2815,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--70:after {
-  background-image: -webkit-linear-gradient(108deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(-18deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(108deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(-18deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--75:after {
@@ -2824,9 +2824,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--75:after {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #eb6666), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #eb6666), color-stop(50%, #d0d0d0), to(#d0d0d0));
-  background-image: -webkit-linear-gradient(bottom, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(0deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #d652aa), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #d652aa), color-stop(50%, #d0d0d0), to(#d0d0d0));
+  background-image: -webkit-linear-gradient(bottom, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(0deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--80:after {
@@ -2834,8 +2834,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--80:after {
-  background-image: -webkit-linear-gradient(72deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(18deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(72deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(18deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--85:after {
@@ -2843,8 +2843,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--85:after {
-  background-image: -webkit-linear-gradient(54deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(36deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(54deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(36deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--90:after {
@@ -2852,8 +2852,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--90:after {
-  background-image: -webkit-linear-gradient(36deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(54deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(36deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(54deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--95:after {
@@ -2861,8 +2861,8 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--95:after {
-  background-image: -webkit-linear-gradient(18deg, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(72deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-linear-gradient(18deg, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(72deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv-skills .skill .progress--bar.progress--100:after {
@@ -2870,9 +2870,9 @@ body {
 }
 
 .cv-skills .skill .progress--circle.progress--100:after {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #eb6666), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #eb6666), color-stop(50%, #d0d0d0), to(#d0d0d0));
-  background-image: -webkit-linear-gradient(left, #eb6666 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
-  background-image: linear-gradient(90deg, #eb6666 50%, transparent 50%, transparent), linear-gradient(270deg, #eb6666 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d652aa), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #d652aa), color-stop(50%, #d0d0d0), to(#d0d0d0));
+  background-image: -webkit-linear-gradient(left, #d652aa 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: linear-gradient(90deg, #d652aa 50%, transparent 50%, transparent), linear-gradient(270deg, #d652aa 50%, #d0d0d0 50%, #d0d0d0);
 }
 
 .cv .cv-wrapper {
@@ -2901,7 +2901,7 @@ body {
   cursor: pointer;
   padding: 0.8rem 1.2rem;
   background-color: rgba(17, 17, 17, 0.1);
-  outline: 2px solid #eb6666;
+  outline: 2px solid #d652aa;
   margin: 0.2rem 0;
   z-index: 5;
   -webkit-transition: all 500ms ease-in;
@@ -2916,13 +2916,13 @@ body {
   width: 8%;
   height: 4px;
   z-index: -1;
-  background-color: rgba(235, 102, 102, 0.8);
+  background-color: rgba(214, 82, 170, 0.8);
   -webkit-transition: 500ms ease-in all;
   transition: 500ms ease-in all;
 }
 
 .cv .cv-wrapper .download-cv:hover::after {
-  background-color: rgba(235, 102, 102, 0.8);
+  background-color: rgba(214, 82, 170, 0.8);
   width: 100%;
   height: 100%;
 }
@@ -2948,13 +2948,13 @@ body {
 .cv .ee .ex .e-icon, .cv .ee .ed .e-icon {
   font-size: 1.6rem;
   font-weight: normal;
-  color: #eb6666;
+  color: #d652aa;
   margin: 1rem 0;
 }
 
 .cv .ee .ex hr.ee-hr, .cv .ee .ed hr.ee-hr {
   border: 0;
-  border-bottom: 1px solid rgba(235, 102, 102, 0.1);
+  border-bottom: 1px solid rgba(214, 82, 170, 0.1);
   margin: 1rem 2rem 1rem 0;
 }
 
@@ -2974,7 +2974,7 @@ body {
 .cv .ee .ex span, .cv .ee .ed span {
   font-size: 0.812rem;
   font-weight: 700;
-  color: #eb6666;
+  color: #d652aa;
 }
 
 footer {
@@ -3015,7 +3015,7 @@ footer .footer-flex .footer-title {
 }
 
 footer .footer-flex .footer-title::first-letter {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 footer .footer-flex .footer-name {
@@ -3042,7 +3042,7 @@ footer .footer-flex .footer-phone::after, footer .footer-flex .footer-email::aft
   width: 100%;
   position: absolute;
   height: 1px;
-  background-color: #eb6666;
+  background-color: #d652aa;
   bottom: 2px;
   left: 0;
   -webkit-transform-origin: right;
@@ -3058,7 +3058,7 @@ footer .footer-flex .footer-phone::after, footer .footer-flex .footer-email::aft
 }
 
 footer .footer-flex .footer-phone:hover, footer .footer-flex .footer-email:hover {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 footer .footer-flex .footer-phone:hover::after, footer .footer-flex .footer-email:hover::after {
@@ -3107,7 +3107,7 @@ footer .footer-flex .footer-icons .footer-icons-ul .footer-icons-item .footer-ic
   width: 100%;
   position: absolute;
   height: 1px;
-  background-color: #eb6666;
+  background-color: #d652aa;
   bottom: -5px;
   left: 0;
   -webkit-transform-origin: right;
@@ -3123,7 +3123,7 @@ footer .footer-flex .footer-icons .footer-icons-ul .footer-icons-item .footer-ic
 }
 
 footer .footer-flex .footer-icons .footer-icons-ul .footer-icons-item .footer-icons-link:hover {
-  color: #eb6666;
+  color: #d652aa;
 }
 
 footer .footer-flex .footer-icons .footer-icons-ul .footer-icons-item .footer-icons-link:hover::after {
@@ -3153,7 +3153,7 @@ footer .decor .decoration-item {
   width: 200px;
   height: 200px;
   padding: 220px;
-  background: rgba(235, 102, 102, 0.1);
+  background: rgba(214, 82, 170, 0.1);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 50%;
   z-index: 0;
@@ -3202,6 +3202,6 @@ footer .copy p span {
   display: inline;
   font-size: 1.099rem;
   font-weight: 100;
-  color: #eb6666;
+  color: #d652aa;
 }
 /*# sourceMappingURL=main.css.map */
