@@ -22,14 +22,16 @@
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .column,
 .columns {
   width: 100%;
   float: left;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* For devices larger than 400px */
@@ -160,7 +162,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -171,7 +174,8 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -917,7 +921,8 @@ body {
   max-width: 40px;
   max-height: 40px;
   border-radius: 50%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid #ffc300;
   background: transparent;
   -webkit-transition: all 500ms ease-out;
@@ -1280,7 +1285,8 @@ body {
 
 @media (min-width: 576px) {
   .services-item:hover {
-    box-shadow: 0px 0px 22px 3px rgba(17, 17, 17, 0.234);
+    -webkit-box-shadow: 0px 0px 22px 3px rgba(17, 17, 17, 0.234);
+            box-shadow: 0px 0px 22px 3px rgba(17, 17, 17, 0.234);
     color: white;
     -webkit-transform: translateY(-5%);
         -ms-transform: translateY(-5%);
@@ -1637,7 +1643,8 @@ body {
   padding-bottom: 260px;
   background-repeat: no-repeat;
   background-position: bottom;
-  object-fit: contain !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 
 .design-wrapper .item .item-image img {
@@ -2065,7 +2072,8 @@ body {
   padding-bottom: 260px;
   background-repeat: no-repeat;
   background-position: bottom;
-  object-fit: contain !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 
 .work-wrapper .item .item-image img {
@@ -2718,6 +2726,7 @@ body {
 .cv-skills .skill .progress--circle.progress--0:after {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
   background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(left, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), to(#d0d0d0));
   background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(90deg, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
 }
 
@@ -2764,6 +2773,7 @@ body {
 .cv-skills .skill .progress--circle.progress--25:after {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
   background-image: -webkit-linear-gradient(left, #d0d0d0 50%, transparent 50%, transparent), -webkit-linear-gradient(top, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #d0d0d0), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), to(#d0d0d0));
   background-image: linear-gradient(90deg, #d0d0d0 50%, transparent 50%, transparent), linear-gradient(180deg, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
 }
 
@@ -2810,6 +2820,7 @@ body {
 .cv-skills .skill .progress--circle.progress--50:after {
   background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
   background-image: -webkit-linear-gradient(right, #ffc300 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), to(#d0d0d0));
   background-image: linear-gradient(-90deg, #ffc300 50%, transparent 50%, transparent), linear-gradient(270deg, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
 }
 
@@ -2856,6 +2867,7 @@ body {
 .cv-skills .skill .progress--circle.progress--75:after {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffc300), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
   background-image: -webkit-linear-gradient(bottom, #ffc300 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ffc300), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), to(#d0d0d0));
   background-image: linear-gradient(0deg, #ffc300 50%, transparent 50%, transparent), linear-gradient(270deg, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
 }
 
@@ -2902,6 +2914,7 @@ body {
 .cv-skills .skill .progress--circle.progress--100:after {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffc300), color-stop(50%, transparent), color-stop(50%, transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), color-stop(50%, #d0d0d0));
   background-image: -webkit-linear-gradient(left, #ffc300 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffc300), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ffc300), color-stop(50%, #d0d0d0), to(#d0d0d0));
   background-image: linear-gradient(90deg, #ffc300 50%, transparent 50%, transparent), linear-gradient(270deg, #ffc300 50%, #d0d0d0 50%, #d0d0d0);
 }
 

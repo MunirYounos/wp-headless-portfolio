@@ -2,7 +2,7 @@
 <section class="main-sub">
     <div class="container">
         <div class="main-content-sub">
-            <div class="logo"><a href="http://multimunir.com/">
+            <div class="logo"><a href="https://checkme.dk">
                 <?php include_once "assets/images/logo.php" ?></a>
             </div>
             <div class="icons">

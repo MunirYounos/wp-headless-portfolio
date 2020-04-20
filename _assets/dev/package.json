@@ -23,5 +23,11 @@
     "grunt-sass": "^1.1.0",
     "node-sass": "^4.7.2",
     "time-grunt": "^1.2.2"
-  }
+  }, 
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
